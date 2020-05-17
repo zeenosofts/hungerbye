@@ -1,0 +1,31 @@
+// Import and configure the Firebase SDK
+// These scripts are made available when the app is served or deployed on Firebase Hosting
+// If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup
+importScripts('https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/6.3.3/firebase-messaging.js');
+var firebaseConfig = {
+    apiKey: "AIzaSyA18vNVvPA-COxFN3ZKFo-L5rpfi11VrZo",
+    authDomain: "cybermeteors.firebaseapp.com",
+    databaseURL: "https://cybermeteors.firebaseio.com",
+    projectId: "cybermeteors",
+    storageBucket: "",
+    messagingSenderId: "568623151193",
+    appId: "1:568623151193:web:c47cb1f3fe36bb88"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+var messaging = firebase.messaging();
+messaging.setBackgroundMessageHandler(function(payload) {
+    console.log('[firebase-messaging-sw.js] Received background message ', payload);
+    // Customize notification here
+    var notificationTitle=payload.data.title;
+           var notificationOptions={
+                body : payload.data.body,
+                icon : payload.data.icon
+            };
+
+    return self.registration.showNotification(notificationTitle,
+        notificationOptions);
+});
+// [END background_handler]
