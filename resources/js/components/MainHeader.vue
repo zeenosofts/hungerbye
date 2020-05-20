@@ -99,7 +99,7 @@
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header"><i class="fa fa-dashboard"></i> MAIN NAVIGATION</li>
                     <li class="active">
-                        <router-link to="/" :key="1">
+                        <router-link to="/" :key="1" replace>
                             <i class="fa fa-th"></i> <span>Dashboard</span>
                         </router-link>
                     </li>
@@ -117,89 +117,89 @@
 
                     <li v-if="role == 'superadmin' || role == 'donor' || role == 'partner' || role == 'manager'" class="header"><i class="fa fa-cc-stripe"></i> Payments</li>
                     <li v-if="role == 'superadmin'" >
-                        <router-link to="/admin/bank-details" :key="3">
+                        <router-link to="/admin/bank-details" :key="4">
                             <i class="fa fa-bank"></i> <span>Add Bank Account <small>Stripe</small></span>
                         </router-link>
                     </li>
                     <li v-if="role == 'partner'">
-                        <router-link to="/partners/add-stripe" :key="3">
+                        <router-link to="/partners/add-stripe" :key="5">
                             <i class="fa fa-cc-stripe"></i> <span>Manage Stripe</span>
                         </router-link>
                     </li>
                     <li v-if="role == 'superadmin' || role == 'donor' || role == 'partner' || role == 'manager'" >
-                        <router-link to="/admin/card_details" >
+                        <router-link to="/admin/card_details" :key="6">
                             <i class="fa fa-bank"></i> <span>Manage Payment Methods</span>
                         </router-link>
                     </li>
                     <li v-if="role == 'superadmin' || role == 'editor'"  class="header"><i class="fa fa-dashboard"></i> MANAGE USERS</li>
                     <li v-if="role == 'superadmin' || role == 'editor'" >
-                        <router-link to="/admin/manage-donors" :key="3">
+                        <router-link to="/admin/manage-donors" :key="7">
                             <i class="fa fa-heart"></i> <span>Manage Donors</span>
                         </router-link>
                     </li>
                     <li v-if="role == 'superadmin' || role == 'editor'" >
-                        <router-link to="/admin/manage-partners" :key="3">
+                        <router-link to="/admin/manage-partners" :key="8">
                             <i class="fa fa-male"></i> <span>Manage Partners</span>
                         </router-link>
                     </li>
                     <li class="header" v-if="role == 'partner' || role == 'manager' || role == 'staff'"><i class="fa fa-shopping-cart"></i> PRODUCTS</li>
                     <li v-if="role == 'partner' || role == 'manager' || role == 'staff'">
-                        <router-link to="/partners/add-items" :key="3">
+                        <router-link to="/partners/add-items" :key="9">
                             <i class="fa fa-cart-plus"></i> <span>Manage Products</span>
                         </router-link>
                     </li>
 
                     <li class="header"><i class="fa fa-reorder"></i> REQUESTS</li>
                     <li v-if="role == 'partner' || role == 'manager' || role == 'staff'">
-                        <router-link to="/partner/post-item" :key="3">
+                        <router-link to="/partner/post-item" :key="10">
                             <i class="fa  fa-check-square-o"></i> <span>Make New Request</span>
                         </router-link>
                     </li>
                     <li v-if="role == 'partner' || role == 'manager' || role == 'staff' ">
-                        <router-link to="/partner/posted-items" :key="3">
+                        <router-link to="/partner/posted-items" :key="11">
                             <i class="fa fa-th-list"></i> <span>My Requests</span>
                         </router-link>
                     </li>
                     <li v-if="role == 'partner' || role == 'manager' || role == 'staff' ">
-                        <router-link to="/requests/my-open24-requests" :key="3">
+                        <router-link to="/requests/my-open24-requests" :key="12">
                             <i class="fa fa-th-list"></i> <span>My Requests Open Over 24hrs </span>
                         </router-link>
                     </li>
 
                     <li v-if="role == 'superadmin' || role == 'editor'">
-                        <router-link to="/requests/posted-requests" :key="3">
+                        <router-link to="/requests/posted-requests" :key="12">
                             <i class="fa fa-reorder"></i> <span>All Requests</span>
                         </router-link>
                     </li>
                     <li >
-                        <router-link to="/requests/opened-requests" :key="3">
+                        <router-link to="/requests/opened-requests" :key="14">
                             <i class="fa fa-reorder"></i> <span>Open Requests</span>
                         </router-link>
                     </li>
                     <li v-if="role == 'donor'">
-                        <router-link to="/requests/contributed-requests" :key="3">
+                        <router-link to="/requests/contributed-requests" :key="15">
                             <i class="fa fa-reorder"></i> <span>Contributed to Requests</span>
                         </router-link>
                     </li>
                     <li v-if="role == 'superadmin' || role == 'editor'">
-                        <router-link to="/requests/open24-requests" :key="3">
+                        <router-link to="/requests/open24-requests" :key="16">
                             <i class="fa fa-reorder"></i> <span>Requests Open Over 24hrs</span>
                         </router-link>
                     </li>
                     <li class="header"><i class="far fa-cocktail"></i> Offers</li>
                     <li v-if="role == 'partner' || role == 'manager' || role == 'staff'">
-                        <router-link to="/partners/add-offers" :key="3">
+                        <router-link to="/partners/add-offers" :key="17">
                             <i class="far fa-cocktail"></i> <span>Manage Offers</span>
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/offers/all" :key="3">
+                        <router-link to="/offers/all" :key="18">
                             <i class="fas fa-coffee"></i> <span>Offers</span>
                         </router-link>
                     </li>
                     <li class="header"><i class="fas fa-hands-helping"></i> Partners</li>
                     <li>
-                        <router-link to="/partners/all" :key="3">
+                        <router-link to="/partners/all" :key="19">
                             <i class="far fa-handshake"></i> <span>Our Partners</span>
                         </router-link>
                     </li>

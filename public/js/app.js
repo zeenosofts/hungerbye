@@ -6779,6 +6779,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     var self = this;
+    card.destroy(self.$refs.card);
     self.getCardDetails();
     self.getItemDetails();
     self.getAPiKey();
@@ -66182,7 +66183,7 @@ var render = function() {
               "li",
               { staticClass: "active" },
               [
-                _c("router-link", { key: 1, attrs: { to: "/" } }, [
+                _c("router-link", { key: 1, attrs: { to: "/", replace: "" } }, [
                   _c("i", { staticClass: "fa fa-th" }),
                   _vm._v(" "),
                   _c("span", [_vm._v("Dashboard")])
@@ -66272,7 +66273,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { key: 3, attrs: { to: "/admin/bank-details" } },
+                      { key: 4, attrs: { to: "/admin/bank-details" } },
                       [
                         _c("i", { staticClass: "fa fa-bank" }),
                         _vm._v(" "),
@@ -66293,7 +66294,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { key: 3, attrs: { to: "/partners/add-stripe" } },
+                      { key: 5, attrs: { to: "/partners/add-stripe" } },
                       [
                         _c("i", { staticClass: "fa fa-cc-stripe" }),
                         _vm._v(" "),
@@ -66314,7 +66315,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { attrs: { to: "/admin/card_details" } },
+                      { key: 6, attrs: { to: "/admin/card_details" } },
                       [
                         _c("i", { staticClass: "fa fa-bank" }),
                         _vm._v(" "),
@@ -66339,7 +66340,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { key: 3, attrs: { to: "/admin/manage-donors" } },
+                      { key: 7, attrs: { to: "/admin/manage-donors" } },
                       [
                         _c("i", { staticClass: "fa fa-heart" }),
                         _vm._v(" "),
@@ -66357,7 +66358,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { key: 3, attrs: { to: "/admin/manage-partners" } },
+                      { key: 8, attrs: { to: "/admin/manage-partners" } },
                       [
                         _c("i", { staticClass: "fa fa-male" }),
                         _vm._v(" "),
@@ -66386,7 +66387,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { key: 3, attrs: { to: "/partners/add-items" } },
+                      { key: 9, attrs: { to: "/partners/add-items" } },
                       [
                         _c("i", { staticClass: "fa fa-cart-plus" }),
                         _vm._v(" "),
@@ -66408,7 +66409,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { key: 3, attrs: { to: "/partner/post-item" } },
+                      { key: 10, attrs: { to: "/partner/post-item" } },
                       [
                         _c("i", { staticClass: "fa  fa-check-square-o" }),
                         _vm._v(" "),
@@ -66428,7 +66429,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { key: 3, attrs: { to: "/partner/posted-items" } },
+                      { key: 11, attrs: { to: "/partner/posted-items" } },
                       [
                         _c("i", { staticClass: "fa fa-th-list" }),
                         _vm._v(" "),
@@ -66448,7 +66449,10 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { key: 3, attrs: { to: "/requests/my-open24-requests" } },
+                      {
+                        key: 12,
+                        attrs: { to: "/requests/my-open24-requests" }
+                      },
                       [
                         _c("i", { staticClass: "fa fa-th-list" }),
                         _vm._v(" "),
@@ -66466,7 +66470,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { key: 3, attrs: { to: "/requests/posted-requests" } },
+                      { key: 12, attrs: { to: "/requests/posted-requests" } },
                       [
                         _c("i", { staticClass: "fa fa-reorder" }),
                         _vm._v(" "),
@@ -66483,7 +66487,7 @@ var render = function() {
               [
                 _c(
                   "router-link",
-                  { key: 3, attrs: { to: "/requests/opened-requests" } },
+                  { key: 14, attrs: { to: "/requests/opened-requests" } },
                   [
                     _c("i", { staticClass: "fa fa-reorder" }),
                     _vm._v(" "),
@@ -66501,7 +66505,7 @@ var render = function() {
                     _c(
                       "router-link",
                       {
-                        key: 3,
+                        key: 15,
                         attrs: { to: "/requests/contributed-requests" }
                       },
                       [
@@ -66521,7 +66525,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { key: 3, attrs: { to: "/requests/open24-requests" } },
+                      { key: 16, attrs: { to: "/requests/open24-requests" } },
                       [
                         _c("i", { staticClass: "fa fa-reorder" }),
                         _vm._v(" "),
@@ -66543,7 +66547,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      { key: 3, attrs: { to: "/partners/add-offers" } },
+                      { key: 17, attrs: { to: "/partners/add-offers" } },
                       [
                         _c("i", { staticClass: "far fa-cocktail" }),
                         _vm._v(" "),
@@ -66558,7 +66562,7 @@ var render = function() {
             _c(
               "li",
               [
-                _c("router-link", { key: 3, attrs: { to: "/offers/all" } }, [
+                _c("router-link", { key: 18, attrs: { to: "/offers/all" } }, [
                   _c("i", { staticClass: "fas fa-coffee" }),
                   _vm._v(" "),
                   _c("span", [_vm._v("Offers")])
@@ -66572,7 +66576,7 @@ var render = function() {
             _c(
               "li",
               [
-                _c("router-link", { key: 3, attrs: { to: "/partners/all" } }, [
+                _c("router-link", { key: 19, attrs: { to: "/partners/all" } }, [
                   _c("i", { staticClass: "far fa-handshake" }),
                   _vm._v(" "),
                   _c("span", [_vm._v("Our Partners")])
