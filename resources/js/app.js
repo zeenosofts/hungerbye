@@ -208,7 +208,7 @@ router.beforeEach((to, from, next) => {
             });
     }
     console.log('array',rolesArray);
-    if(rolesArray.indexOf(role) > -1){
+    if(rolesArray.includes(role)){
         next();
     }else{
         next({'path':'error'});
