@@ -26,6 +26,7 @@ class CreateUsersTable extends Migration
             $table->string('business_name')->nullable();
             $table->string('number')->nullable();
             $table->string('business_address')->nullable();
+            $table->string('code')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

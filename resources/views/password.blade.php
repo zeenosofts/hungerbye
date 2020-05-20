@@ -348,22 +348,16 @@
                 <td class="wrapper">
                   <table border="0" cellpadding="0" cellspacing="0">
                       
-                      <tr><td><h1 class="newColorText"><b>NOTIFICATION</b></h1></td></tr>
+                      <tr><td><h1 class="newColorText"><b>PASSWORD RESET</b></h1></td></tr>
                     <tr>
                       <td>
-                        <p>Dear  {{$demo->user_name}}!</p>
-                            @if($demo->role == "4" || $demo->role != "3")
-                          <p>Your account is <b>{{$demo->status == "1" ? "activated" : "deactivated"}}</b> now.</p>
-                            @endif
-                          @if($demo->role == "3")
-                              <p>Your account is <b>{{$demo->status == "1" ? "activated" : "deactivated"}}</b> now.
-                                  Please reachout to support for help at <a>support@hungerbye.com</a></p>
-                          @endif
+                        <p>Dear!</p>
+                         <p>Please click the button to reset your password</p>
                         <table class="table1" border="1px solid black">
                         
                             <tbody>
                             <tr>
-                            <td class="td1"><div align="center" style="margin-top: 20px"><a href="https://hungerbye.com" class="button button2">HungerBye</a></div></td>
+                            <td class="td1"><div align="center" style="margin-top: 20px"><a href='https://hungerbye.com/password/reset/{{$demo->code}}' class="button button2">Reset Pasword</a></div></td>
                             
                             </tr>
                             </tbody>

@@ -17,6 +17,10 @@ Route::get('auth/google', 'Auth\LoginController@redirectToGoogle');
 Route::get('auth/google/callback', 'Auth\LoginController@handleGoogleCallback');
 Route::post('loginCheck', 'UserController@loginCheck')->name('loginCheck');//
 Route::POST('saveToken', 'UserController@saveToken')->name('saveToken');//
+Route::GET('forgot', 'UserController@forgot')->name('forgot');//
+Route::POST('send_verification_code', 'UserController@send_verification_code')->name('send_verification_code');//
+Route::GET('password/reset/{code}', 'UserController@password_reset')->name('password/reset');//
+Route::POST('update_password_code', 'UserController@update_password_code')->name('update_password_code');
 Auth::routes();
 Route::group([ 'middleware' => ['auth']], function() {
     Route::get('stripe/connect', 'UserController@stripeConnect');//

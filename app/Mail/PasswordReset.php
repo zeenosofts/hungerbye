@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class ChangeStatusNotification extends Mailable
+class PasswordReset extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -29,8 +29,8 @@ class ChangeStatusNotification extends Mailable
      */
     public function build()
     {
-        return $this->from('zohaib@cybermeteors.com','Account Approval')
-            ->view('sendNotificationStatus')
+        return $this->from('zohaib@cybermeteors.com','Password Reset')
+            ->view('password')
             ->subject('HungerBye');
     }
 }

@@ -31,6 +31,6 @@ class SendNotification extends Mailable
     {
         return $this->from('zohaib@cybermeteors.com','Registered Successfully')
             ->view('sendNotification')
-            ->subject('Cyber Meteors');
+            ->subject('HungerBye');
     }
 }
