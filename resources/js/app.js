@@ -190,7 +190,7 @@ const router = new VueRouter({
     routes //passing routes in vueRouter
 });
 router.beforeEach((to, from, next) => {
-    ///Added Comment Tested
+    ////Added Comment Tested
    let role=window.localStorage.getItem('role');
    console.log("role"+role+to.name);
    let rolesArray=to.meta.roles;
