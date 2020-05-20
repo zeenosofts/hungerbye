@@ -190,6 +190,11 @@ const router = new VueRouter({
     routes //passing routes in vueRouter
 });
 router.beforeEach((to, from, next) => {
+    console.log(to.name);
+    if(to.name == "dashboard"){
+        next();
+        return false;
+    }
     ////Added Comment Tested
    let role=window.localStorage.getItem('role');
    console.log("role"+role+to.name);

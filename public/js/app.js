@@ -92105,7 +92105,14 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]({
 
 });
 router.beforeEach(function (to, from, next) {
-  ///Added Comment Tested
+  console.log(to.name);
+
+  if (to.name == "dashboard") {
+    next();
+    return false;
+  } ////Added Comment Tested
+
+
   var role = window.localStorage.getItem('role');
   console.log("role" + role + to.name);
   var rolesArray = to.meta.roles;
