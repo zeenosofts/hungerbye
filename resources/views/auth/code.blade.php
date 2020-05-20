@@ -49,7 +49,7 @@
                 <div class="form-group" align="center">
                     <label class="control-label"> New Password</label>
                     <br>
-                    <input type="password" required name="email" class="form-control">
+                    <input type="password" required name="password" class="form-control">
                 </div>
 
             <div class="mt-5">
