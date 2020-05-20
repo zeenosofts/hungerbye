@@ -511,7 +511,7 @@ class UserController extends Controller
         if($PostItem->save()){
             $color="text-yellow";
             $title="Request for Donation";
-            $body="Help ".$getData->business_name." serve ".$getData->first_name;
+            $body="Help ".$getData->business_name." serve ".$request->customer_name;
             $type=json_encode(array("fas fa-hand-holding-usd $color","donationPosted",'/requests/donate/'.$PostItem->id));
             $token=Token::select(DB::raw('*'))->join('role_user','tokens.user_id','=','role_user.user_id')
                 ->join('roles','roles.id','=','role_user.role_id')
