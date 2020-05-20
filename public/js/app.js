@@ -6789,6 +6789,10 @@ __webpack_require__.r(__webpack_exports__);
     var self = this;
     card.destroy(self.$refs.card);
   },
+  beforeMount: function beforeMount() {
+    var self = this;
+    card.destroy(self.$refs.card);
+  },
   methods: {
     donate: function donate() {
       var self = this;

@@ -263,6 +263,11 @@
 
             card.destroy(self.$refs.card);
         },
+        beforeMount() {
+            let self=this;
+
+            card.destroy(self.$refs.card);
+        },
         methods: {
             donate(){
                 let self=this;
