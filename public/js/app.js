@@ -66582,7 +66582,12 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "content-wrapper" }, [
-      _c("div", { attrs: { id: "app" } }, [_c("router-view")], 1)
+      _c(
+        "div",
+        { attrs: { id: "app" } },
+        [_c("router-view", { key: _vm.$route.fullPath })],
+        1
+      )
     ]),
     _vm._v(" "),
     _c("footer", { staticClass: "main-footer" }, [

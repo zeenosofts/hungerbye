@@ -214,7 +214,7 @@
             <div id="app">
                 <!--<button type="button" @click="selectedComponent = 'ExampleComponentOther'">Open</button>-->
              <!--<component :is='selectedComponent' :da="da"></component>-->
-                <router-view></router-view>
+                <router-view :key="$route.fullPath"></router-view>
             </div>
 
 
