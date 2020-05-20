@@ -6779,7 +6779,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     var self = this;
-    card.destroy(self.$refs.card);
     self.getCardDetails();
     self.getItemDetails();
     self.getAPiKey();

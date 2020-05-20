@@ -249,7 +249,6 @@
         mounted(){
 
             let self=this;
-            card.destroy(self.$refs.card);
             self.getCardDetails();
             self.getItemDetails();
 

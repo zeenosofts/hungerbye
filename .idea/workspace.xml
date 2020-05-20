@@ -83,8 +83,8 @@
       <file leaf-file-name="PayUsingStripComponent.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/PayUsingStripComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="251" column="26" lean-forward="true" selection-start-line="251" selection-start-column="26" selection-end-line="251" selection-end-column="26" />
+            <state relative-caret-position="49">
+              <caret line="250" column="26" lean-forward="false" selection-start-line="250" selection-start-column="26" selection-end-line="250" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -472,7 +472,7 @@
       <workItem from="1589792458155" duration="16000" />
       <workItem from="1589980037163" duration="3357000" />
       <workItem from="1589985128030" duration="1851000" />
-      <workItem from="1589995195717" duration="2906000" />
+      <workItem from="1589995195717" duration="3083000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583738279704</created>
@@ -520,7 +520,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1072412000" />
+    <option name="totallyTimeSpent" value="1072589000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1020,8 +1020,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/PayUsingStripComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="251" column="26" lean-forward="true" selection-start-line="251" selection-start-column="26" selection-end-line="251" selection-end-column="26" />
+        <state relative-caret-position="49">
+          <caret line="250" column="26" lean-forward="false" selection-start-line="250" selection-start-column="26" selection-end-line="250" selection-end-column="26" />
           <folding />
         </state>
       </provider>
