@@ -1016,7 +1016,7 @@ class UserController extends Controller
         $code=$request->code;
         $checkCode=User::where('code','=',$code)->get();
         if(count($checkCode) > 0){
-            $update=User::where('code','=',$code)->update(['password' => md4($request->password)]);
+            $update=User::where('code','=',$code)->update(['password' => md5($request->password)]);
             User::where('code','=',$code)->update(['code' => null]);
             return redirect('home');
         }else{
