@@ -3337,6 +3337,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -64462,59 +64469,65 @@ var render = function() {
       _c(
         "div",
         { staticClass: "row" },
-        _vm._l(_vm.offers, function(o) {
-          return _c("div", { staticClass: "col-md-3" }, [
-            _c("div", { staticClass: "box box-widget" }, [
-              _c("div", { staticClass: "box-header with-border" }, [
-                _c("div", { staticClass: "user-block" }, [
-                  _c("img", {
-                    staticClass: "img-circle",
-                    attrs: {
-                      src: "public/images/avatar.jpg",
-                      alt: "User Image"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "span",
-                    { staticClass: "username" },
-                    [
-                      _c(
-                        "router-link",
-                        { attrs: { to: "/partner-profile/" + o.user_id } },
-                        [_vm._v(_vm._s(o.business_name))]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "description" }, [
-                    _vm._v("Shared publicly - " + _vm._s(o.offer_time))
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "box-body" }, [
-                _c("h5", [_vm._v(_vm._s(o.item_name))]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v("Offered Price: "),
-                  _c("b", [
-                    _vm._v("$" + _vm._s(parseFloat(o.item_price).toFixed(2)))
+        [
+          _vm.offers.length < 1
+            ? _c("div", { staticClass: "col-lg-12" }, [_vm._m(1)])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm._l(_vm.offers, function(o) {
+            return _c("div", { staticClass: "col-md-3" }, [
+              _c("div", { staticClass: "box box-widget" }, [
+                _c("div", { staticClass: "box-header with-border" }, [
+                  _c("div", { staticClass: "user-block" }, [
+                    _c("img", {
+                      staticClass: "img-circle",
+                      attrs: {
+                        src: "public/images/avatar.jpg",
+                        alt: "User Image"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "span",
+                      { staticClass: "username" },
+                      [
+                        _c(
+                          "router-link",
+                          { attrs: { to: "/partner-profile/" + o.user_id } },
+                          [_vm._v(_vm._s(o.business_name))]
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "description" }, [
+                      _vm._v("Shared publicly - " + _vm._s(o.offer_time))
+                    ])
                   ])
                 ]),
                 _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(o.item_description))]),
-                _vm._v(" "),
-                _c("p", [
-                  _c("i", { staticClass: "fa fa-map-marker" }),
-                  _vm._v(" " + _vm._s(o.business_address))
+                _c("div", { staticClass: "box-body" }, [
+                  _c("h5", [_vm._v(_vm._s(o.item_name))]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v("Offered Price: "),
+                    _c("b", [
+                      _vm._v("$" + _vm._s(parseFloat(o.item_price).toFixed(2)))
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(o.item_description))]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _c("i", { staticClass: "fa fa-map-marker" }),
+                    _vm._v(" " + _vm._s(o.business_address))
+                  ])
                 ])
               ])
             ])
-          ])
-        }),
-        0
+          })
+        ],
+        2
       )
     ])
   ])
@@ -64539,6 +64552,18 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("li", { staticClass: "active" }, [_vm._v("All Offers")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "box" }, [
+      _c("div", { staticClass: "box-body" }, [
+        _vm._v(
+          "\n                    Sorry there are no offers till now.\n                "
+        )
       ])
     ])
   }

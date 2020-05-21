@@ -528,10 +528,18 @@ class UserController extends Controller
         }
     }
     public function saveToken(Request $request){
-        $saveNotificationToken=new Token();
-        $saveNotificationToken->user_id=Auth::user()->id;
-        $saveNotificationToken->token=$request->token;
-        $saveNotificationToken->save();
+        $checkFirstIfHaveToken=Token::where('user_id','=',Auth::user()->id)
+            ->where('type','=',$request->type)->get();
+        if(count($checkFirstIfHaveToken) > 0){
+            $update=Token::where('user_id','=',Auth::user()->id)
+                ->where('type','=',$request->type)->update(['token' => $request->token]);
+        }else {
+            $saveNotificationToken = new Token();
+            $saveNotificationToken->user_id = Auth::user()->id;
+            $saveNotificationToken->token = $request->token;
+            $saveNotificationToken->type = $request->type;
+            $saveNotificationToken->save();
+        }
     }
     public function sendPushNotifcations($title,$body,$type,$token,$icon){
         if (!defined('SERVER_API_KEY')) define('SERVER_API_KEY', 'AIzaSyBe_D7NFNY4u6zTUNvMm06pIp9rtz2FCZA');

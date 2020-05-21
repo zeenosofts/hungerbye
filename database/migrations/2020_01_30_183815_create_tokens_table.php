@@ -17,6 +17,7 @@ class CreateTokensTable extends Migration
             $table->bigIncrements('id');
             $table->string('user_id');
             $table->string('token');
+            $table->string('type');
             $table->timestamps();
         });
     }

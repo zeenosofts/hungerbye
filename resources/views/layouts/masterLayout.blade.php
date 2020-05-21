@@ -662,14 +662,14 @@
             console.log('Notification permission granted.');
             // TODO(developer): Retrieve an Instance ID token for use with FCM.
             // ...
-            if(isTokenSentToServer())
-            {
-                console.log("Token Already Saved");
-            }
-            else
-            {
+//            if(isTokenSentToServer())
+//            {
+//                console.log("Token Already Saved");
+//            }
+//            else
+//            {
                 getRegToken();
-            }
+            //}
             //getRegToken();
 
         } else {
@@ -711,7 +711,7 @@
             headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
             cache: false,
             method:'POST',
-            data:{data:true,token:currentToken},
+            data:{data:true,token:currentToken,type:'web'},
             success: function(html){
                 console.log('Token Saved inDB');
             }

@@ -12,6 +12,13 @@
         </section>
         <section class="content" >
         <div class="row">
+            <div v-if="offers.length < 1" class="col-lg-12">
+                <div class="box">
+                    <div class="box-body">
+                        Sorry there are no offers till now.
+                    </div>
+                </div>
+            </div>
             <div class="col-md-3" v-for="o in offers">
                 <!-- Box Comment -->
                 <div class="box box-widget">
