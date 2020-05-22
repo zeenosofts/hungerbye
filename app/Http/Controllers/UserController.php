@@ -542,7 +542,8 @@ class UserController extends Controller
             'body' => $body,
             'icon' => "/public/images/logo.png",
             'type' => $type,
-            'click_action' => '/public/images/logo.png',
+            'click_action' => 'www.google.com',
+
         ];
         $payload=[
             'registration_ids' => $tokens,
