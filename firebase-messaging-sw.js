@@ -22,7 +22,11 @@ messaging.setBackgroundMessageHandler(function(payload) {
     var notificationTitle=payload.data.title;
            var notificationOptions={
                 body : payload.data.body,
-                icon : payload.data.icon
+                icon : payload.data.icon,
+               click_action: payload.data.click_action, // To handle notification click when notification is moved to notification tray
+               data: {
+                   click_action: payload.data.click_action
+               }
             };
 
     return self.registration.showNotification(notificationTitle,

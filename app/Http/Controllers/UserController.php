@@ -8,7 +8,6 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Item;
 use App\ItemsPosted;
 use App\Mail\ChangeStatusNotification;
-use App\Mail\PasswordReset;
 use App\Mail\SendNotification;
 use App\Notification;
 use App\Offer;
@@ -165,10 +164,7 @@ class UserController extends Controller
 
         $updateUserTable=User::where('id','=',$request->user_id)->update(['status' => $status]);
         $getUser=User::where('id','=',$request->user_id)->first();
-        $getRole=DB::table('role_user')->where('user_id','=',$request->user_id)->first()->role_id;
-        //dd($getRole);
-        $data=$this->sendMailUpdateStatus($getUser->email,$getUser->first_name,$status,$getRole);
-
+        $this->sendMailUpdateStatus($getUser->email,$getUser->first_name,$status);
     }
     public function getUsersWithThisID(Request $request)
     {
@@ -381,16 +377,16 @@ class UserController extends Controller
         }else{
             $id=Auth::user()->id;
         }
-            $saveItem= new Offer();
-            $saveItem->user_id=$id;
-            $saveItem->item_name=$request->item_name;
-            $saveItem->item_description=$request->item_description;
-            $saveItem->item_price=$request->item_price;
-            if($saveItem->save()){
-                return response("success");
-            }else{
-                return response("error");
-            }
+        $saveItem= new Offer();
+        $saveItem->user_id=$id;
+        $saveItem->item_name=$request->item_name;
+        $saveItem->item_description=$request->item_description;
+        $saveItem->item_price=$request->item_price;
+        if($saveItem->save()){
+            return response("success");
+        }else{
+            return response("error");
+        }
     }
     public function getAllItems(){
         if(Auth::user()->roles()->first()->name == "manager" || Auth::user()->roles()->first()->name == "staff"){
@@ -412,7 +408,7 @@ class UserController extends Controller
     }//
     public function getAllOffersWithNames(){
         $items=Offer::select(DB::raw('*,offers.updated_at as offer_time'))->
-            join('users','users.id','=','offers.user_id')
+        join('users','users.id','=','offers.user_id')
             ->where('offers.status','=','1')
             ->orderBy('offers.updated_at','ASC')
             ->get();
@@ -485,16 +481,16 @@ class UserController extends Controller
         }else{
             $id=Auth::user()->id;
         }
-            $updateItem=Offer::where('id','=',$request->id)->update([
-                'item_name' => $request->item_name,
-                'item_description' => $request->item_description,
-                'item_price' => $request->item_price
-            ]);
-            if($updateItem){
-                return response("success");
-            }else{
-                return response("error");
-            }
+        $updateItem=Offer::where('id','=',$request->id)->update([
+            'item_name' => $request->item_name,
+            'item_description' => $request->item_description,
+            'item_price' => $request->item_price
+        ]);
+        if($updateItem){
+            return response("success");
+        }else{
+            return response("error");
+        }
     }
     public function postArequest(Request $request){
         //echo URL::asset('public/images/logo.png'); die;
@@ -513,7 +509,7 @@ class UserController extends Controller
         if($PostItem->save()){
             $color="text-yellow";
             $title="Request for Donation";
-            $body="Help ".$getData->business_name." serve ".$request->customer_name;
+            $body="Help ".$getData->business_name." serve ".$getData->first_name;
             $type=json_encode(array("fas fa-hand-holding-usd $color","donationPosted",'/requests/donate/'.$PostItem->id));
             $token=Token::select(DB::raw('*'))->join('role_user','tokens.user_id','=','role_user.user_id')
                 ->join('roles','roles.id','=','role_user.role_id')
@@ -528,18 +524,10 @@ class UserController extends Controller
         }
     }
     public function saveToken(Request $request){
-        $checkFirstIfHaveToken=Token::where('user_id','=',Auth::user()->id)
-            ->where('type','=',$request->type)->get();
-        if(count($checkFirstIfHaveToken) > 0){
-            $update=Token::where('user_id','=',Auth::user()->id)
-                ->where('type','=',$request->type)->update(['token' => $request->token]);
-        }else {
-            $saveNotificationToken = new Token();
-            $saveNotificationToken->user_id = Auth::user()->id;
-            $saveNotificationToken->token = $request->token;
-            $saveNotificationToken->type = $request->type;
-            $saveNotificationToken->save();
-        }
+        $saveNotificationToken=new Token();
+        $saveNotificationToken->user_id=Auth::user()->id;
+        $saveNotificationToken->token=$request->token;
+        $saveNotificationToken->save();
     }
     public function sendPushNotifcations($title,$body,$type,$token,$icon){
         if (!defined('SERVER_API_KEY')) define('SERVER_API_KEY', 'AIzaSyBe_D7NFNY4u6zTUNvMm06pIp9rtz2FCZA');
@@ -554,7 +542,7 @@ class UserController extends Controller
             'body' => $body,
             'icon' => "/public/images/logo.png",
             'type' => $type,
-            '' => '/abc.png',
+            'click_action' => '/public/images/logo.png',
         ];
         $payload=[
             'registration_ids' => $tokens,
@@ -843,12 +831,11 @@ class UserController extends Controller
         //dd($data);
         Mail::to($email)->send(new SendNotification($data));
     }
-    public function sendMailUpdateStatus($email,$username,$status,$role){
+    public function sendMailUpdateStatus($email,$username,$status){
         $data=new \stdClass();
         $data->user_name=$username;
         $data->email=$email;
         $data->status=$status;
-        $data->role=$role;
         //dd($data);
         Mail::to($email)->send(new ChangeStatusNotification($data));
     }
@@ -868,7 +855,7 @@ class UserController extends Controller
             $id=Auth::user()->id;
         }
         $getNotifications=Notification::where('user_id','=',$id)->orWhere('user_id','=','donors')->orderBy('created_at','DESC')->get();
-        $getNotificationsCount=Notification::where('user_id','=',$id)->where('status','=','1')->orderBy('created_at','DESC')->get();
+        $getNotificationsCount=Notification::where('user_id','=',$id)->where('status','=','1')->orWhere('user_id','=','donors')->orderBy('created_at','DESC')->get();
         if(count($getNotifications) > 0) {
             foreach ($getNotifications as $g) {
                 $data[] = array('id' => $g->id,'count' => count($getNotificationsCount) > 0 ? count($getNotificationsCount) : 0, 'class' => json_decode($g->type), 'body' => $g->body);
@@ -932,13 +919,13 @@ class UserController extends Controller
     }
     public function getAllOffersForThisID(Request $request){
 
-            $items=Offer::select(DB::raw('*,offers.updated_at as offer_time'))->
-            join('users','users.id','=','offers.user_id')
-                ->where('offers.status','=','1')
-                ->where('offers.user_id','=',$request->id)
-                ->orderBy('offers.updated_at','ASC')
-                ->get();
-            return json_encode($items);
+        $items=Offer::select(DB::raw('*,offers.updated_at as offer_time'))->
+        join('users','users.id','=','offers.user_id')
+            ->where('offers.status','=','1')
+            ->where('offers.user_id','=',$request->id)
+            ->orderBy('offers.updated_at','ASC')
+            ->get();
+        return json_encode($items);
 
     }
     public function stripeConnect(Request $request){
@@ -956,7 +943,7 @@ class UserController extends Controller
                 'code' => $code,
             ]);
         } catch (OAuthErrorException $e) {
-             dd($e);
+            dd($e);
         }
 
         $connect_id= $stripeResponse->stripe_user_id;
@@ -985,52 +972,5 @@ class UserController extends Controller
             return response('error');
         }
 
-    }
-    public function forgot(){
-        return view('auth.forgot');
-    }
-    public function send_verification_code(Request $request){
-        $checkEmail=User::where('email','=',$request->email)->get();
-        if(count($checkEmail) > 0){
-            $checkIfCodeAlreadySent=User::where('email','=',$request->email)
-                ->where('code','!=',null)->get();
-            if(count($checkIfCodeAlreadySent) > 0){
-                return back()->with('error',array('warning','Password reset link has already been sent on your '.$request->email.'.'));
-            }else {
-                $createCode = md5($request->email . "-" . date('dmyis'));
-                $update = User::where('email', '=', $request->email)->update(['code' => $createCode]);
-                $this->sendMailLink($request->email,$createCode);
-                return back()->with('error', array('success', 'Password reset link has been sent on your ' . $request->email . '.'));
-            }
-        }else{
-            return back()->with('error',array('danger','Email does not match to our record.'));
-        }
-    }
-    public function sendMailLink($email,$code){
-        $data=new \stdClass();
-        $data->email=$email;
-        $data->code=$code;
-        //dd($data);
-        Mail::to($email)->send(new PasswordReset($data));
-    }
-    public function password_reset(Request $request){
-        $code=$request->code;
-        $checkCode=User::where('code','=',$code)->get();
-        if(count($checkCode) > 0){
-            return view('auth.code')->with('code',$code);
-        }else{
-            abort(404);
-        }
-    }
-    public function update_password_code(Request $request){
-        $code=$request->code;
-        $checkCode=User::where('code','=',$code)->get();
-        if(count($checkCode) > 0){
-            $update=User::where('code','=',$code)->update(['password' => md5($request->password)]);
-            User::where('code','=',$code)->update(['code' => null]);
-            return redirect('home');
-        }else{
-            return back()->with('error',array('danger','Link Expired.'));
-        }
     }
 }

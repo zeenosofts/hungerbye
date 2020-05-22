@@ -4,9 +4,10 @@
     <list default="true" id="d769162a-5a45-428b-9e21-f1f8e170a7fd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2020_01_30_183815_create_tokens_table.php" afterPath="$PROJECT_DIR$/database/migrations/2020_01_30_183815_create_tokens_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/AllOffersComponent.vue" afterPath="$PROJECT_DIR$/resources/js/components/AllOffersComponent.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firebase-messaging-sw.js" afterPath="$PROJECT_DIR$/firebase-messaging-sw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/hungerbey/app/Http/Controllers/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/firebase-messaging-sw.js" afterPath="$PROJECT_DIR$/hungerbey/firebase-messaging-sw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/resources/views/layouts/masterLayout.blade.php" afterPath="$PROJECT_DIR$/hungerbey/resources/views/layouts/masterLayout.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php" />
     </list>
     <ignored path="D:\hungerbey\.idea\shelf/" />
@@ -33,13 +34,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="538" column="45" lean-forward="false" selection-start-line="538" selection-start-column="45" selection-end-line="538" selection-end-column="45" />
+            <state relative-caret-position="781">
+              <caret line="976" column="0" lean-forward="false" selection-start-line="976" selection-start-column="0" selection-end-line="976" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="firebase-messaging-sw.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
               <folding>
-                <element signature="e#29906#31214#0#PHP" expanded="false" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,8 +59,8 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="1491">
+              <caret line="80" column="67" lean-forward="false" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -58,7 +69,7 @@
       <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
+            <state relative-caret-position="63">
               <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding />
             </state>
@@ -69,7 +80,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sum_donated_amount</find>
       <find>/requests/donate/1</find>
       <find>popper</find>
       <find>getAmountForPartner</find>
@@ -99,6 +109,7 @@
       <find>save_t</find>
       <find>saveTokenToServer</find>
       <find>saveToken</find>
+      <find>getN</find>
     </findStrings>
     <replaceStrings>
       <replace>donated_vs_items.donated_amount</replace>
@@ -120,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/js/components/AddItemComponent.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/EditItemComponent.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/EditOfferComponent.vue" />
         <option value="$PROJECT_DIR$/resources/views/auth/pending_approval.blade.php" />
@@ -169,8 +179,9 @@
         <option value="$PROJECT_DIR$/resources/views/auth/code.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/AllOffersComponent.vue" />
         <option value="$PROJECT_DIR$/database/migrations/2020_01_30_183815_create_tokens_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php" />
+        <option value="$PROJECT_DIR$/firebase-messaging-sw.js" />
       </list>
     </option>
   </component>
@@ -209,61 +220,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
               <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="auth" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
@@ -275,7 +238,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -484,7 +446,11 @@
       <workItem from="1589980037163" duration="3357000" />
       <workItem from="1589985128030" duration="1851000" />
       <workItem from="1589995195717" duration="9356000" />
-      <workItem from="1590082011363" duration="1973000" />
+      <workItem from="1590082011363" duration="2637000" />
+      <workItem from="1590091037924" duration="109000" />
+      <workItem from="1590093300124" duration="763000" />
+      <workItem from="1590133081063" duration="141000" />
+      <workItem from="1590179757079" duration="85000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583738279704</created>
@@ -532,7 +498,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1080835000" />
+    <option name="totallyTimeSpent" value="1082597000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,16 +511,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31095597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33029002" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5214823" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32918552" sideWeight="0.4785177" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.4785177" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -662,13 +629,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/js/components/ContributedRequestsItemsTable.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/MyOpen24RequestsItemsTable.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
@@ -694,9 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="515" column="35" lean-forward="false" selection-start-line="515" selection-start-column="20" selection-end-line="515" selection-end-column="35" />
-          <folding>
-            <element signature="e#40#60#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -918,7 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3019">
           <caret line="195" column="21" lean-forward="false" selection-start-line="195" selection-start-column="21" selection-end-line="195" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
           <caret line="44" column="57" lean-forward="false" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,7 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
           <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -957,7 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -965,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7539">
           <caret line="359" column="135" lean-forward="false" selection-start-line="359" selection-start-column="120" selection-end-line="359" selection-end-column="135" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -973,9 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#1914#0#Blade" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -983,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="359" column="101" lean-forward="false" selection-start-line="359" selection-start-column="101" selection-end-line="359" selection-end-column="101" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,37 +945,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#section#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="713" column="56" lean-forward="false" selection-start-line="713" selection-start-column="56" selection-end-line="713" selection-end-column="56" />
-          <folding>
-            <element signature="e#26922#29561#0#HTML" expanded="false" />
-            <marker date="1590083838353" expanded="true" signature="27660:27677" ph="..." />
-            <marker date="1590083838353" expanded="true" signature="27993:28266" ph="..." />
-            <marker date="1590083838353" expanded="true" signature="28527:28544" ph="..." />
-            <marker date="1590083838353" expanded="true" signature="29092:29109" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
+        <state relative-caret-position="63">
           <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding />
         </state>
@@ -1043,12 +964,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1491">
+          <caret line="80" column="67" lean-forward="false" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="767" column="13" lean-forward="false" selection-start-line="767" selection-start-column="13" selection-end-line="767" selection-end-column="13" />
+          <folding>
+            <marker date="1590179821783" expanded="true" signature="27660:27677" ph="..." />
+            <marker date="1590179821783" expanded="true" signature="27993:28266" ph="..." />
+            <marker date="1590179821783" expanded="true" signature="28527:28544" ph="..." />
+            <marker date="1590179821783" expanded="true" signature="29092:29109" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="538" column="45" lean-forward="false" selection-start-line="538" selection-start-column="45" selection-end-line="538" selection-end-column="45" />
+        <state relative-caret-position="781">
+          <caret line="976" column="0" lean-forward="false" selection-start-line="976" selection-start-column="0" selection-end-line="976" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
-            <element signature="e#29906#31214#0#PHP" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
