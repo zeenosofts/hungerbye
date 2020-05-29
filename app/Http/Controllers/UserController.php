@@ -537,12 +537,13 @@ class UserController extends Controller
             'Authorization: Key='.SERVER_API_KEY,
             'Content-Type: Application/json'
         ];
+        $typeForLink=json_decode($type);
         $msg=[
             'title' => $title,
             'body' => $body,
             'icon' => "/public/images/logo.png",
             'type' => $type,
-            'click_action' => $type[2],
+            'click_action' => $typeForLink[2],
 
         ];
         $payload=[
