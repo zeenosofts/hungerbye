@@ -1,14 +1,7 @@
 // Import and configure the Firebase SDK
 // These scripts are made available when the app is served or deployed on Firebase Hosting
 // If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup
-self.addEventListener('notificationclick',function (event) {
-    var click_action =  event.notification.data.click_action;
-    console.log(event.notification);
-    event.notification.close();
-    event.waitUntil(
-        clients.openWindow(click_action)
-    );
-});
+
 importScripts('https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/6.3.3/firebase-messaging.js');
 var firebaseConfig = {
@@ -41,5 +34,12 @@ messaging.setBackgroundMessageHandler(function(payload) {
     return self.registration.showNotification(notificationTitle,
         notificationOptions);
 });
-
+self.addEventListener('notificationclick',function (event) {
+    var click_action =  event.notification.data.click_action;
+    console.log('background' +event.notification);
+    event.notification.close();
+    event.waitUntil(
+        clients.openWindow(click_action)
+    );
+});
 // [END background_handler]
