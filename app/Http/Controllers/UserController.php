@@ -543,7 +543,7 @@ class UserController extends Controller
             'body' => $body,
             'icon' => "/public/images/logo.png",
             'type' => $type,
-            'click_action' => $typeForLink[2],
+            'click_action' => 'https://hungerbye.com/home#'.$typeForLink[2],
 
         ];
         $payload=[

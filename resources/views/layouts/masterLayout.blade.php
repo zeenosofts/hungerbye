@@ -630,6 +630,15 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{URL::asset('public/dist/js/demo.js')}}"></script>
 <script src="{{URL::asset('public/plugins/iCheck/icheck.min.js')}}"></script>
+<script>
+    self.addEventListener('notificationclick',function (event) {
+        var click_action =  event.notification.data.click_action;
+        event.notification.close();
+        event.waitUntil(
+            clients.openWindow(click_action)
+        );
+    });
+</script>
 <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-messaging.js"></script>
 <script>
@@ -770,13 +779,7 @@
         };
         var notification=new Notification(notificationTitle,notificationOptions);
     });
-    self.addEventListener('notificationclick',function (event) {
-        var click_action =  event.notification.data.click_action;
-        event.notification.close();
-        event.waitUntil(
-            clients.openWindow(click_action)
-        );
-    });
+
 </script>
 
 </body>
