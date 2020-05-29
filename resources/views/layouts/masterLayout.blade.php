@@ -773,10 +773,11 @@
     self.addEventListener('notificationclick',function (event) {
         var click_action =  event.notification.data.click_action;
         console.log('message' +event.notification);
-        event.notification.close();
+
         event.waitUntil(
             clients.openWindow(click_action)
         );
+        event.notification.close();
     });
 </script>
 
