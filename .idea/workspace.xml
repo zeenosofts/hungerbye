@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d769162a-5a45-428b-9e21-f1f8e170a7fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firebase-messaging-sw.js" afterPath="$PROJECT_DIR$/firebase-messaging-sw.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/hungerbey/app/Http/Controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/firebase-messaging-sw.js" afterPath="$PROJECT_DIR$/hungerbey/firebase-messaging-sw.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/resources/views/layouts/masterLayout.blade.php" afterPath="$PROJECT_DIR$/hungerbey/resources/views/layouts/masterLayout.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php" />
     </list>
     <ignored path="D:\hungerbey\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,18 +34,18 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="882" column="0" lean-forward="true" selection-start-line="882" selection-start-column="0" selection-end-line="882" selection-end-column="0" />
+            <state relative-caret-position="267">
+              <caret line="544" column="37" lean-forward="false" selection-start-line="544" selection-start-column="37" selection-end-line="544" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="masterLayout.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="masterLayout.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1220">
-              <caret line="778" column="7" lean-forward="false" selection-start-line="778" selection-start-column="7" selection-end-line="778" selection-end-column="7" />
+            <state relative-caret-position="109">
+              <caret line="738" column="9" lean-forward="true" selection-start-line="738" selection-start-column="9" selection-end-line="738" selection-end-column="9" />
               <folding>
                 <marker date="1590252931791" expanded="true" signature="27660:27677" ph="..." />
                 <marker date="1590252931791" expanded="true" signature="27993:28266" ph="..." />
@@ -59,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firebase-messaging-sw.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="firebase-messaging-sw.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="613">
@@ -95,8 +92,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>popper</find>
-      <find>getAmountForPartner</find>
       <find>getRole</find>
       <find>logo-mini</find>
       <find>get</find>
@@ -125,6 +120,8 @@
       <find>saveToken</find>
       <find>saveNotification(</find>
       <find>getN</find>
+      <find>saveN</find>
+      <find>send</find>
     </findStrings>
     <replaceStrings>
       <replace>donated_vs_items.donated_amount</replace>
@@ -487,7 +484,7 @@
       <workItem from="1590182232562" duration="676000" />
       <workItem from="1590251239022" duration="1437000" />
       <workItem from="1590473249899" duration="188000" />
-      <workItem from="1590727443975" duration="2602000" />
+      <workItem from="1590727443975" duration="2764000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583738279704</created>
@@ -535,7 +532,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1089249000" />
+    <option name="totallyTimeSpent" value="1089411000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1006,33 +1003,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+        <state relative-caret-position="109">
+          <caret line="738" column="9" lean-forward="true" selection-start-line="738" selection-start-column="9" selection-end-line="738" selection-end-column="9" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1590252931791" expanded="true" signature="27660:27677" ph="..." />
+            <marker date="1590252931791" expanded="true" signature="27993:28266" ph="..." />
+            <marker date="1590252931791" expanded="true" signature="28527:28544" ph="..." />
+            <marker date="1590252931791" expanded="true" signature="29092:29109" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="882" column="0" lean-forward="true" selection-start-line="882" selection-start-column="0" selection-end-line="882" selection-end-column="0" />
+        <state relative-caret-position="267">
+          <caret line="544" column="37" lean-forward="false" selection-start-line="544" selection-start-column="37" selection-end-line="544" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php">
+    <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1220">
-          <caret line="778" column="7" lean-forward="false" selection-start-line="778" selection-start-column="7" selection-end-line="778" selection-end-column="7" />
+        <state relative-caret-position="613">
+          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
           <folding>
-            <marker date="1590252931791" expanded="true" signature="27660:27677" ph="..." />
-            <marker date="1590252931791" expanded="true" signature="27993:28266" ph="..." />
-            <marker date="1590252931791" expanded="true" signature="28527:28544" ph="..." />
-            <marker date="1590252931791" expanded="true" signature="29092:29109" ph="..." />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

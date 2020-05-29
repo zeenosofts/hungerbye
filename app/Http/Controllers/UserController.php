@@ -542,7 +542,7 @@ class UserController extends Controller
             'body' => $body,
             'icon' => "/public/images/logo.png",
             'type' => $type,
-            'click_action' => 'www.google.com',
+            'click_action' => $type[2],
 
         ];
         $payload=[
