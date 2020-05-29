@@ -652,6 +652,7 @@
 
 
 <script>
+    var click_event='';
     firebase.initializeApp(firebaseConfig);
     const messaging = firebase.messaging();
     //this is PAIRED KEY GENERATED IN CLoud MESSAGING TAB IN WEB PUSH CERTIFICATES
@@ -720,6 +721,7 @@
     //this is for recieveing messages or notification from FCM
     messaging.onMessage(function(payload){
         console.log("Message", payload);
+        click_event=payload.data.click_action;
         var type=$.parseJSON(payload.data.type);
         console.log(type[0]);
         //Couting Notifications
@@ -771,11 +773,9 @@
         var notification=new Notification(notificationTitle,notificationOptions);
     });
     self.addEventListener('notificationclick',function (event) {
-        var click_action =  event.notification.data.click_action;
-        console.log('message' +event.notification);
 
         event.waitUntil(
-            clients.openWindow(click_action)
+            clients.openWindow(click_event)
         );
         event.notification.close();
     });

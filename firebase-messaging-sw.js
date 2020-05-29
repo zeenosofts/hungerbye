@@ -15,9 +15,10 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
+var click_event='';
 var messaging = firebase.messaging();
 messaging.setBackgroundMessageHandler(function(payload) {
+    click_event=payload.data.click_action;
     console.log('[firebase-messaging-sw.js] Received background message ', payload);
     // Customize notification here
     var notificationTitle=payload.data.title;
@@ -36,10 +37,8 @@ messaging.setBackgroundMessageHandler(function(payload) {
 });
 self.addEventListener('notificationclick',function (event) {
 
-    console.log('background' +event.notification);
-    var click_action =  event.notification.data.click_action;
     event.waitUntil(
-        clients.openWindow(click_action)
+        clients.openWindow(click_event)
     );
     event.notification.close();
 });
