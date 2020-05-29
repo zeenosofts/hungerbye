@@ -764,7 +764,7 @@
             icon : payload.data.icon,
             click_action: payload.data.click_action, // To handle notification click when notification is moved to notification tray
             data: {
-                time: new Date(Date().now()).toString(),
+                time: new Date().toString(),
                 click_action: payload.data.click_action
             }
         };
