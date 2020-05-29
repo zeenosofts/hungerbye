@@ -509,7 +509,7 @@ class UserController extends Controller
         if($PostItem->save()){
             $color="text-yellow";
             $title="Request for Donation";
-            $body="Help ".$getData->business_name." serve ".$getData->first_name;
+            $body="Help ".$getData->business_name." serve ".$request->customer_name;
             $type=json_encode(array("fas fa-hand-holding-usd $color","donationPosted",'/requests/donate/'.$PostItem->id));
             $token=Token::select(DB::raw('*'))->join('role_user','tokens.user_id','=','role_user.user_id')
                 ->join('roles','roles.id','=','role_user.role_id')
@@ -570,13 +570,28 @@ class UserController extends Controller
 //        }
     }
     public function saveNotification($user,$title,$body,$type,$icon){
-        $savePushNotification=new Notification();
-        $savePushNotification->user_id=$user;
-        $savePushNotification->type=$type;
-        $savePushNotification->title=$title;
-        $savePushNotification->body=$body;
-        $savePushNotification->icon=$icon;
-        $savePushNotification->save();
+        if($user == "donor"){
+         $all=Token::select(DB::raw('*,tokens.user_id as uid'))->join('role_user','tokens.user_id','=','role_user.user_id')
+             ->join('roles','roles.id','=','role_user.role_id')
+             ->where('roles.name','=','donor')->get();
+         foreach($all as $u){
+             $savePushNotification=new Notification();
+             $savePushNotification->user_id=$u->uid;
+             $savePushNotification->type=$type;
+             $savePushNotification->title=$title;
+             $savePushNotification->body=$body;
+             $savePushNotification->icon=$icon;
+             $savePushNotification->save();
+         }
+        }else {
+            $savePushNotification = new Notification();
+            $savePushNotification->user_id = $user;
+            $savePushNotification->type = $type;
+            $savePushNotification->title = $title;
+            $savePushNotification->body = $body;
+            $savePushNotification->icon = $icon;
+            $savePushNotification->save();
+        }
     }
     public function get_items_for_this_donor(){
         if(Auth::user()->roles()->first()->name == "manager" || Auth::user()->roles()->first()->name == "staff"){
@@ -855,8 +870,8 @@ class UserController extends Controller
         }else{
             $id=Auth::user()->id;
         }
-        $getNotifications=Notification::where('user_id','=',$id)->orWhere('user_id','=','donors')->orderBy('created_at','DESC')->get();
-        $getNotificationsCount=Notification::where('user_id','=',$id)->where('status','=','1')->orWhere('user_id','=','donors')->orderBy('created_at','DESC')->get();
+        $getNotifications=Notification::where('user_id','=',$id)->orderBy('created_at','DESC')->get();
+        $getNotificationsCount=Notification::where('user_id','=',$id)->where('status','=','1')->orderBy('created_at','DESC')->get();
         if(count($getNotifications) > 0) {
             foreach ($getNotifications as $g) {
                 $data[] = array('id' => $g->id,'count' => count($getNotificationsCount) > 0 ? count($getNotificationsCount) : 0, 'class' => json_decode($g->type), 'body' => $g->body);

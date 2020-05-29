@@ -23,13 +23,21 @@ messaging.setBackgroundMessageHandler(function(payload) {
            var notificationOptions={
                 body : payload.data.body,
                 icon : payload.data.icon,
-               click_action: payload.data.click_action, // To handle notification click when notification is moved to notification tray
-               data: {
+               click_action: payload.data.click_action,
+               ata: {
+                   time: new Date(Date().now()).toString(),
                    click_action: payload.data.click_action
-               }
+               }// To handle notification click when notification is moved to notification tray
             };
 
     return self.registration.showNotification(notificationTitle,
         notificationOptions);
+});
+self.addEventListener('notificationclick',function (event) {
+   var click_action =  event.notification.data.click_action;
+   event.notification.close();
+   event.waitUntil(
+     clients.openWindow(click_action)
+   );
 });
 // [END background_handler]

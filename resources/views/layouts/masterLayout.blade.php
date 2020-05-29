@@ -764,10 +764,18 @@
             icon : payload.data.icon,
             click_action: payload.data.click_action, // To handle notification click when notification is moved to notification tray
             data: {
+                time: new Date(Date().now()).toString(),
                 click_action: payload.data.click_action
             }
         };
         var notification=new Notification(notificationTitle,notificationOptions);
+    });
+    self.addEventListener('notificationclick',function (event) {
+        var click_action =  event.notification.data.click_action;
+        event.notification.close();
+        event.waitUntil(
+            clients.openWindow(click_action)
+        );
     });
 </script>
 
