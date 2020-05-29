@@ -34,12 +34,11 @@ messaging.setBackgroundMessageHandler(function(payload) {
     return self.registration.showNotification(notificationTitle,
         notificationOptions);
 });
-self.addEventListener('notificationclick',function (event) {
-    var click_action =  event.notification.data.click_action;
-    console.log('background' +event.notification);
-    event.notification.close();
+self.addEventListener('notificationclick', event => {
+    event.notification.close()
+
     event.waitUntil(
-        self.clients.openWindow(click_action)
-    );
-});
+        self.clients.openWindow('https://artofmyself.com')
+    )
+})
 // [END background_handler]
