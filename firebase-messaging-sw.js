@@ -39,7 +39,7 @@ self.addEventListener('notificationclick',function (event) {
     console.log('background' +event.notification);
     event.notification.close();
     event.waitUntil(
-        clients.openWindow(click_action)
+        self.clients.openWindow(click_action)
     );
 });
 // [END background_handler]

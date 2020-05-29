@@ -6,7 +6,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/hungerbey/app/Http/Controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/firebase-messaging-sw.js" afterPath="$PROJECT_DIR$/hungerbey/firebase-messaging-sw.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/resources/views/layouts/masterLayout.blade.php" afterPath="$PROJECT_DIR$/hungerbey/resources/views/layouts/masterLayout.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php" />
     </list>
     <ignored path="D:\hungerbey\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="masterLayout.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="masterLayout.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="774" column="28" lean-forward="false" selection-start-line="774" selection-start-column="28" selection-end-line="774" selection-end-column="28" />
+            <state relative-caret-position="-14">
+              <caret line="744" column="42" lean-forward="false" selection-start-line="744" selection-start-column="42" selection-end-line="744" selection-end-column="42" />
               <folding>
                 <marker date="1590755597115" expanded="true" signature="27660:27677" ph="..." />
                 <marker date="1590755597115" expanded="true" signature="27993:28266" ph="..." />
@@ -57,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firebase-messaging-sw.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="firebase-messaging-sw.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="43" selection-end-column="3" />
+            <state relative-caret-position="739">
+              <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -193,8 +192,8 @@
         <option value="$PROJECT_DIR$/resources/js/components/AllOffersComponent.vue" />
         <option value="$PROJECT_DIR$/database/migrations/2020_01_30_183815_create_tokens_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/firebase-messaging-sw.js" />
         <option value="$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php" />
+        <option value="$PROJECT_DIR$/firebase-messaging-sw.js" />
       </list>
     </option>
   </component>
@@ -472,7 +471,7 @@
       <workItem from="1590182232562" duration="676000" />
       <workItem from="1590251239022" duration="1437000" />
       <workItem from="1590473249899" duration="188000" />
-      <workItem from="1590727443975" duration="7496000" />
+      <workItem from="1590727443975" duration="8135000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583738279704</created>
@@ -520,7 +519,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1094143000" />
+    <option name="totallyTimeSpent" value="1094782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -999,25 +998,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="43" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="774" column="28" lean-forward="false" selection-start-line="774" selection-start-column="28" selection-end-line="774" selection-end-column="28" />
+        <state relative-caret-position="-14">
+          <caret line="744" column="42" lean-forward="false" selection-start-line="744" selection-start-column="42" selection-end-line="744" selection-end-column="42" />
           <folding>
             <marker date="1590755597115" expanded="true" signature="27660:27677" ph="..." />
             <marker date="1590755597115" expanded="true" signature="27993:28266" ph="..." />
             <marker date="1590755597115" expanded="true" signature="28527:28544" ph="..." />
             <marker date="1590755597115" expanded="true" signature="29092:29109" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="739">
+          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
