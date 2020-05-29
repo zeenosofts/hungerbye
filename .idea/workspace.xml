@@ -6,7 +6,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/hungerbey/app/Http/Controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/firebase-messaging-sw.js" afterPath="$PROJECT_DIR$/hungerbey/firebase-messaging-sw.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/resources/views/layouts/masterLayout.blade.php" afterPath="$PROJECT_DIR$/hungerbey/resources/views/layouts/masterLayout.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php" />
     </list>
     <ignored path="D:\hungerbey\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="525" column="48" lean-forward="false" selection-start-line="525" selection-start-column="48" selection-end-line="525" selection-end-column="48" />
+            <state relative-caret-position="354">
+              <caret line="553" column="25" lean-forward="false" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -45,8 +44,8 @@
       <file leaf-file-name="masterLayout.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="721">
-              <caret line="779" column="35" lean-forward="false" selection-start-line="779" selection-start-column="35" selection-end-line="779" selection-end-column="35" />
+            <state relative-caret-position="595">
+              <caret line="773" column="65" lean-forward="false" selection-start-line="773" selection-start-column="65" selection-end-line="773" selection-end-column="65" />
               <folding>
                 <marker date="1590757788517" expanded="true" signature="27660:27677" ph="..." />
                 <marker date="1590757788517" expanded="true" signature="27993:28266" ph="..." />
@@ -60,8 +59,8 @@
       <file leaf-file-name="firebase-messaging-sw.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+            <state relative-caret-position="612">
+              <caret line="39" column="61" lean-forward="false" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -193,8 +192,8 @@
         <option value="$PROJECT_DIR$/resources/js/components/AllOffersComponent.vue" />
         <option value="$PROJECT_DIR$/database/migrations/2020_01_30_183815_create_tokens_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/firebase-messaging-sw.js" />
         <option value="$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php" />
+        <option value="$PROJECT_DIR$/firebase-messaging-sw.js" />
       </list>
     </option>
   </component>
@@ -472,7 +471,7 @@
       <workItem from="1590182232562" duration="676000" />
       <workItem from="1590251239022" duration="1437000" />
       <workItem from="1590473249899" duration="188000" />
-      <workItem from="1590727443975" duration="9194000" />
+      <workItem from="1590727443975" duration="9496000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583738279704</created>
@@ -520,7 +519,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1095841000" />
+    <option name="totallyTimeSpent" value="1096143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -993,16 +992,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="525" column="48" lean-forward="false" selection-start-line="525" selection-start-column="48" selection-end-line="525" selection-end-column="48" />
+        <state relative-caret-position="354">
+          <caret line="553" column="25" lean-forward="false" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        <state relative-caret-position="612">
+          <caret line="39" column="61" lean-forward="false" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -1011,8 +1010,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/masterLayout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="779" column="35" lean-forward="false" selection-start-line="779" selection-start-column="35" selection-end-line="779" selection-end-column="35" />
+        <state relative-caret-position="595">
+          <caret line="773" column="65" lean-forward="false" selection-start-line="773" selection-start-column="65" selection-end-line="773" selection-end-column="65" />
           <folding>
             <marker date="1590757788517" expanded="true" signature="27660:27677" ph="..." />
             <marker date="1590757788517" expanded="true" signature="27993:28266" ph="..." />

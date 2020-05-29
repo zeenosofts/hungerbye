@@ -35,9 +35,9 @@ messaging.setBackgroundMessageHandler(function(payload) {
         notificationOptions);
 });
 self.addEventListener('notificationclick',function (event) {
-    var click_action =  event.notification.data.click_action;
-    console.log('background' +event.notification);
 
+    console.log('background' +event.notification);
+    var click_action =  event.notification.data.click_action;
     event.waitUntil(
         clients.openWindow(click_action)
     );
