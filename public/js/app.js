@@ -70693,21 +70693,42 @@ var render = function() {
                     _vm._v(" Choose item")
                   ]),
                   _vm._v(" "),
-                  _c("multiselect", {
-                    attrs: {
-                      options: _vm.items,
-                      placeholder: "Select",
-                      label: "item_name",
-                      "track-by": "id"
-                    },
-                    model: {
-                      value: _vm.item.item_name,
-                      callback: function($$v) {
-                        _vm.$set(_vm.item, "item_name", $$v)
+                  _c(
+                    "multiselect",
+                    {
+                      attrs: {
+                        options: _vm.items,
+                        placeholder: "Select",
+                        label: "item_name",
+                        "track-by": "id"
                       },
-                      expression: "item.item_name"
-                    }
-                  }),
+                      model: {
+                        value: _vm.item.item_name,
+                        callback: function($$v) {
+                          _vm.$set(_vm.item, "item_name", $$v)
+                        },
+                        expression: "item.item_name"
+                      }
+                    },
+                    [
+                      _c(
+                        "span",
+                        { attrs: { slot: "noResult" }, slot: "noResult" },
+                        [
+                          _vm._v(
+                            "No item found.Please add an item first by going to "
+                          ),
+                          _c(
+                            "router-link",
+                            { attrs: { to: "/partners/add-items" } },
+                            [_vm._v("Manage Products")]
+                          ),
+                          _vm._v(".")
+                        ],
+                        1
+                      )
+                    ]
+                  ),
                   _vm._v(" "),
                   _c(
                     "span",

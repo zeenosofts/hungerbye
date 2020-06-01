@@ -27,7 +27,7 @@
                     <div class="box-body">
                         <div class="form-group">
                             <label class="control-label"> Choose item</label>
-                            <multiselect v-model="item.item_name" :options="items"  placeholder="Select" label="item_name" track-by="id" ></multiselect>
+                            <multiselect v-model="item.item_name" :options="items"  placeholder="Select" label="item_name" track-by="id" ><span slot="noResult">No item found.Please add an item first by going to <router-link to="/partners/add-items">Manage Products</router-link>.</span></multiselect>
                             <span class="help-block" v-show="error.item_name">Item Name can't be empty!</span>
                         </div>
                         <!--<div class="form-group">-->

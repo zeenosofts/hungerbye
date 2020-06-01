@@ -41,11 +41,11 @@
 .button2 {
     background-color: white; 
     color: black; 
-    border: 2px solid #900C3F;
+    border: 2px solid #1034A6;
 }
 
 .button2:hover {
-    background-color: #900C3F;
+    background-color: #1034A6;
     color: white;
 }
 
@@ -80,8 +80,8 @@
 }
 .bg-navbar
                         {
-                            background-color: #900C3F !important;
-                            border: #900C3F !important;
+                            background-color: #1034A6 !important;
+                            border: #1034A6 !important;
                         }
 
 .table1 {
@@ -328,7 +328,7 @@
           border-color: #34495e !important; } }
       .newColorText
                         {
-                            color:  #900C3F !important;
+                            color:  #1034A6 !important;
                         }
     </style>
   </head>
@@ -339,7 +339,7 @@
         <td class="container">
           <div class="content">
               <div align="center">
-                 <img src="{{URL::asset("public/images/hungerByeMain.png")}}" width="50px"/>
+                 <img src="{{URL::asset("public/images/hungerByeMain.png")}}" width="220px"/>
               </div>
             <table class="main">
 
@@ -348,14 +348,14 @@
                 <td class="wrapper">
                   <table border="0" cellpadding="0" cellspacing="0">
                       
-                      <tr><td><h1 class="newColorText"><b>NOTIFICATION</b></h1></td></tr>
+                      <tr><td><h1 class="newColorText"><b>Registration Successful</b></h1></td></tr>
                     <tr>
                       <td>
                         <p>Dear  {{$demo->user_name}}!</p>
-                        <p>Your account has been created on Hungerbey. Please Check your Credentials Mentioned below! Click on given Link to access.</p>
-                        <p>User Name: {{$demo->email}}<i></i>.</p>
-                        <p>Password: {{$demo->password}}<i></i>.</p>
-                        <p>Role: {{$demo->role}}<i></i>.</p>
+                        <p>Your hungerbye account have been created. Please Check your Credentials below to verify! Click on given Link to access.</p>
+                        <p>User Name: {{$demo->email}}<i></i></p>
+                        <p>Password: {{$demo->password}}<i></i></p>
+                        <p>Role: {{$demo->role}}<i></i></p>
                         <table class="table1" border="1px solid black">
                         
                             <tbody>

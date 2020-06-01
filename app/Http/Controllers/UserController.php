@@ -796,7 +796,7 @@ class UserController extends Controller
                 ->get();
             $getPartners = User::select(DB::raw('*,users.id as user_id,roles.name as role_name'))->join('role_user', 'users.id', '=', 'role_user.user_id')
                 ->join('roles', 'roles.id', '=', 'role_user.role_id')
-                ->where('roles.id', '=', 3)
+                ->where('roles.id', '=', 4)
                 ->get();
             $getStaff = User::select(DB::raw('*,users.id as user_id,roles.name as role_name'))->join('role_user', 'users.id', '=', 'role_user.user_id')
                 ->join('roles', 'roles.id', '=', 'role_user.role_id')
@@ -836,7 +836,7 @@ class UserController extends Controller
                 ->get();
             $getPartners = User::select(DB::raw('*,users.id as user_id,roles.name as role_name'))->join('role_user', 'users.id', '=', 'role_user.user_id')
                 ->join('roles', 'roles.id', '=', 'role_user.role_id')
-                ->where('roles.id', '=', 3)
+                ->where('roles.id', '=', 4)
                 ->get();
             $getStaff = User::select(DB::raw('*,users.id as user_id,roles.name as role_name'))->join('role_user', 'users.id', '=', 'role_user.user_id')
                 ->join('roles', 'roles.id', '=', 'role_user.role_id')
