@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Item;
 use App\ItemsPosted;
 use App\Mail\ChangeStatusNotification;
+use App\Mail\PasswordReset;
 use App\Mail\SendNotification;
 use App\Notification;
 use App\Offer;
@@ -30,6 +31,53 @@ use Stripe\Stripe;
 class UserController extends Controller
 {
     //
+    public function forgot(){
+        return view('auth.forgot');
+    }
+    public function send_verification_code(Request $request){
+        $checkEmail=User::where('email','=',$request->email)->get();
+        if(count($checkEmail) > 0){
+            $checkIfCodeAlreadySent=User::where('email','=',$request->email)
+                ->where('code','!=',null)->get();
+            if(count($checkIfCodeAlreadySent) > 0){
+                return back()->with('error',array('warning','Password reset link has already been sent on your '.$request->email.'.'));
+            }else {
+                $createCode = md5($request->email . "-" . date('dmyis'));
+                $update = User::where('email', '=', $request->email)->update(['code' => $createCode]);
+                $this->sendMailLink($request->email,$createCode);
+                return back()->with('error', array('success', 'Password reset link has been sent on your ' . $request->email . '.'));
+            }
+        }else{
+            return back()->with('error',array('danger','Email does not match to our record.'));
+        }
+    }
+    public function sendMailLink($email,$code){
+        $data=new \stdClass();
+        $data->email=$email;
+        $data->code=$code;
+        //dd($data);
+        Mail::to($email)->send(new PasswordReset($data));
+    }
+    public function password_reset(Request $request){
+        $code=$request->code;
+        $checkCode=User::where('code','=',$code)->get();
+        if(count($checkCode) > 0){
+            return view('auth.code')->with('code',$code);
+        }else{
+            abort(404);
+        }
+    }
+    public function update_password_code(Request $request){
+        $code=$request->code;
+        $checkCode=User::where('code','=',$code)->get();
+        if(count($checkCode) > 0){
+            $update=User::where('code','=',$code)->update(['password' => md5($request->password)]);
+            User::where('code','=',$code)->update(['code' => null]);
+            return redirect('home');
+        }else{
+            return back()->with('error',array('danger','Link Expired.'));
+        }
+    }
     public function getRoles(Request $request)
     {
         if(Auth::user()->roles()->first()->name == "superadmin" && $request->key == "admin-add-user") {
