@@ -70718,14 +70718,9 @@ var render = function() {
                           _vm._v(
                             "No item found.Please add an item first by going to "
                           ),
-                          _c(
-                            "router-link",
-                            { attrs: { to: "/partners/add-items" } },
-                            [_vm._v("Manage Products")]
-                          ),
+                          _c("b", [_vm._v("Manage Products")]),
                           _vm._v(".")
-                        ],
-                        1
+                        ]
                       )
                     ]
                   ),
