@@ -212,7 +212,7 @@ class UserController extends Controller
 
         $updateUserTable=User::where('id','=',$request->user_id)->update(['status' => $status]);
         $getUser=User::where('id','=',$request->user_id)->first();
-        $this->sendMailUpdateStatus($getUser->email,$getUser->first_name,$status);
+        $this->sendMailUpdateStatus($getUser->email,$getUser->first_name,$status,DB::table('roles')->where('id','=',$request->role_id)->first()->name);
     }
     public function getUsersWithThisID(Request $request)
     {
@@ -904,11 +904,12 @@ class UserController extends Controller
         //dd($data);
         Mail::to($email)->send(new SendNotification($data));
     }
-    public function sendMailUpdateStatus($email,$username,$status){
+    public function sendMailUpdateStatus($email,$username,$status,$role){
         $data=new \stdClass();
         $data->user_name=$username;
         $data->email=$email;
         $data->status=$status;
+        $data->role=strtoupper($role);
         //dd($data);
         Mail::to($email)->send(new ChangeStatusNotification($data));
     }

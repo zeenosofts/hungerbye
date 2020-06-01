@@ -34,8 +34,18 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="634" column="34" lean-forward="false" selection-start-line="634" selection-start-column="34" selection-end-line="634" selection-end-column="34" />
+            <state relative-caret-position="598">
+              <caret line="214" column="22" lean-forward="false" selection-start-line="214" selection-start-column="22" selection-end-line="214" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sendNotificationStatus.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/sendNotificationStatus.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="341" column="87" lean-forward="false" selection-start-line="341" selection-start-column="87" selection-end-line="341" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -110,7 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getAllOffersWithNames</find>
       <find>card_details</find>
       <find>manage-partners</find>
       <find>view_user</find>
@@ -125,9 +134,7 @@
       <find>posted</find>
       <find>request</find>
       <find>callout</find>
-      <find>sendMailUpdateStatus</find>
       <find>token(</find>
-      <find>change</find>
       <find>save_to</find>
       <find>save_t</find>
       <find>saveTokenToServer</find>
@@ -140,6 +147,9 @@
       <find>900C3F</find>
       <find>forgot</find>
       <find>saveNotification</find>
+      <find>sendMailUpdateStatus</find>
+      <find>sendMail(</find>
+      <find>change</find>
     </findStrings>
     <replaceStrings>
       <replace>donated_vs_items.donated_amount</replace>
@@ -266,25 +276,7 @@
               <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
               <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -509,7 +501,7 @@
       <workItem from="1590251239022" duration="1437000" />
       <workItem from="1590473249899" duration="188000" />
       <workItem from="1590727443975" duration="11266000" />
-      <workItem from="1590991592721" duration="4535000" />
+      <workItem from="1590991592721" duration="5061000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583738279704</created>
@@ -557,7 +549,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1102448000" />
+    <option name="totallyTimeSpent" value="1102974000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -987,26 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/sendNotification.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="338" column="30" lean-forward="true" selection-start-line="338" selection-start-column="30" selection-end-line="338" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/sendNotificationStatus.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="341" column="87" lean-forward="false" selection-start-line="341" selection-start-column="87" selection-end-line="341" selection-end-column="87" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/password.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1062,10 +1034,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sendNotification.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="338" column="30" lean-forward="true" selection-start-line="338" selection-start-column="30" selection-end-line="338" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sendNotificationStatus.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="341" column="87" lean-forward="false" selection-start-line="341" selection-start-column="87" selection-end-line="341" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="634" column="34" lean-forward="false" selection-start-line="634" selection-start-column="34" selection-end-line="634" selection-end-column="34" />
+        <state relative-caret-position="598">
+          <caret line="214" column="22" lean-forward="false" selection-start-line="214" selection-start-column="22" selection-end-line="214" selection-end-column="22" />
           <folding />
         </state>
       </provider>
