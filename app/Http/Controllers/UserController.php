@@ -212,7 +212,8 @@ class UserController extends Controller
 
         $updateUserTable=User::where('id','=',$request->user_id)->update(['status' => $status]);
         $getUser=User::where('id','=',$request->user_id)->first();
-        $this->sendMailUpdateStatus($getUser->email,$getUser->first_name,$status,DB::table('roles')->where('id','=',$request->user_id)->first()->name);
+        $getRoleID=DB::table('role_user')->where('user_id','=',$request->user_id)->first()->role_id;
+        $this->sendMailUpdateStatus($getUser->email,$getUser->first_name,$status,DB::table('roles')->where('id','=',$getRoleID)->first()->name);
     }
     public function getUsersWithThisID(Request $request)
     {
