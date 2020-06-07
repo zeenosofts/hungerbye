@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d769162a-5a45-428b-9e21-f1f8e170a7fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/hungerbey/app/Http/Controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/firebase-messaging-sw.js" afterPath="$PROJECT_DIR$/hungerbey/firebase-messaging-sw.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hungerbey/resources/views/layouts/masterLayout.blade.php" afterPath="$PROJECT_DIR$/hungerbey/resources/views/layouts/masterLayout.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/AddItemComponent.vue" afterPath="$PROJECT_DIR$/resources/js/components/AddItemComponent.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/AllPartnersTable.vue" afterPath="$PROJECT_DIR$/resources/js/components/AllPartnersTable.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/ContributedRequestsItemsTable.vue" afterPath="$PROJECT_DIR$/resources/js/components/ContributedRequestsItemsTable.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/ManageDonorsTable.vue" afterPath="$PROJECT_DIR$/resources/js/components/ManageDonorsTable.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/ManageEmployeeTable.vue" afterPath="$PROJECT_DIR$/resources/js/components/ManageEmployeeTable.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/ManageItemsTable.vue" afterPath="$PROJECT_DIR$/resources/js/components/ManageItemsTable.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/ManagePartnersTable.vue" afterPath="$PROJECT_DIR$/resources/js/components/ManagePartnersTable.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/ManageUserTable.vue" afterPath="$PROJECT_DIR$/resources/js/components/ManageUserTable.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/MyDashboardComponent.vue" afterPath="$PROJECT_DIR$/resources/js/components/MyDashboardComponent.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/MyOpen24RequestsItemsTable.vue" afterPath="$PROJECT_DIR$/resources/js/components/MyOpen24RequestsItemsTable.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/Open24RequestsItemsTable.vue" afterPath="$PROJECT_DIR$/resources/js/components/Open24RequestsItemsTable.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/OpenedRequestsItemsTable.vue" afterPath="$PROJECT_DIR$/resources/js/components/OpenedRequestsItemsTable.vue" />
     </list>
     <ignored path="D:\hungerbey\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,21 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
               <caret line="986" column="39" lean-forward="false" selection-start-line="986" selection-start-column="39" selection-end-line="986" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sendNotificationStatus.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/sendNotificationStatus.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="341" column="87" lean-forward="false" selection-start-line="341" selection-start-column="87" selection-end-line="341" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -61,21 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-531">
-              <caret line="114" column="13" lean-forward="false" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllPartnersTable.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/AllPartnersTable.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="70" />
+            <state relative-caret-position="231">
+              <caret line="138" column="46" lean-forward="true" selection-start-line="138" selection-start-column="46" selection-end-line="138" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -146,17 +138,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/js/components/EditItemComponent.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/EditOfferComponent.vue" />
         <option value="$PROJECT_DIR$/resources/views/auth/pending_approval.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/Open24RequestsItemsTable.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/OpenedRequestsItemsTable.vue" />
         <option value="$USER_HOME$/Desktop/AwesomeProject/package.json" />
         <option value="$USER_HOME$/Desktop/AwesomeProject/android/local.properties" />
         <option value="$USER_HOME$/Desktop/AwesomeProject/App.js" />
-        <option value="$PROJECT_DIR$/resources/js/components/ContributedRequestsItemsTable.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/MyOpen24RequestsItemsTable.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/MyDashboardComponent.vue" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" />
         <option value="$PROJECT_DIR$/resources/js/components/EditUserComponent.vue" />
         <option value="$PROJECT_DIR$/resources/views/auth/complete_profile.blade.php" />
@@ -165,16 +150,11 @@
         <option value="$PROJECT_DIR$/resources/views/auth/choose_role.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/choose_roles.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/ManageEmployeeTable.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/ManageDonorsTable.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/ManagePartnersTable.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/RequestsItemsTable.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/PartnerProfileComponent.vue" />
         <option value="$PROJECT_DIR$/public/dist/js/notifications.js" />
         <option value="$PROJECT_DIR$/resources/js/components/AddCardComponent.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/Error.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/ManageItemsTable.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/ManageUserTable.vue" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/resources/js/components/MainHeader.vue" />
@@ -195,8 +175,20 @@
         <option value="$PROJECT_DIR$/resources/views/sendNotification.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/sendNotificationStatus.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/password.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/PostItemComponent.vue" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/PostItemComponent.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/OpenedRequestsItemsTable.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/Open24RequestsItemsTable.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/MyOpen24RequestsItemsTable.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/MyDashboardComponent.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/ManageUserTable.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/ManagePartnersTable.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/ManageItemsTable.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/ManageEmployeeTable.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/ManageDonorsTable.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/ContributedRequestsItemsTable.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/AllPartnersTable.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/AddItemComponent.vue" />
       </list>
     </option>
   </component>
@@ -260,12 +252,6 @@
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hungerbey" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hungerbey" type="b2602c69:ProjectViewProjectNode" />
@@ -495,7 +481,7 @@
       <workItem from="1590473249899" duration="188000" />
       <workItem from="1590727443975" duration="11266000" />
       <workItem from="1590991592721" duration="5717000" />
-      <workItem from="1591548043720" duration="2357000" />
+      <workItem from="1591548043720" duration="3124000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583738279704</created>
@@ -543,7 +529,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1105987000" />
+    <option name="totallyTimeSpent" value="1106754000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -674,76 +660,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/js/components/AddPartnerStripeComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="27" column="140" lean-forward="false" selection-start-line="27" selection-start-column="105" selection-end-line="27" selection-end-column="140" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/MyDashboardComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6552">
-          <caret line="312" column="74" lean-forward="false" selection-start-line="312" selection-start-column="74" selection-end-line="312" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="515" column="35" lean-forward="false" selection-start-line="515" selection-start-column="20" selection-end-line="515" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/complete_profile.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/choose_role.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/choose_roles.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="12" column="100" lean-forward="false" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/ManageEmployeeTable.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="32" column="73" lean-forward="false" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/ManagePartnersTable.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="31" column="61" lean-forward="true" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/AddUserComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-797">
@@ -786,13 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/ManageDonorsTable.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="55" column="47" lean-forward="false" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/AddCardComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2594">
@@ -804,20 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/ManageItemsTable.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2898">
-          <caret line="138" column="49" lean-forward="false" selection-start-line="138" selection-start-column="49" selection-end-line="138" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/ManageUserTable.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2814">
-          <caret line="134" column="87" lean-forward="false" selection-start-line="134" selection-start-column="87" selection-end-line="134" selection-end-column="87" />
         </state>
       </provider>
     </entry>
@@ -934,13 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/AllOffersComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -990,14 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/PostItemComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="262" lean-forward="false" selection-start-line="29" selection-start-column="262" selection-end-line="29" selection-end-column="262" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
@@ -1014,14 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-531">
-          <caret line="114" column="13" lean-forward="false" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/MainHeader.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -1030,10 +902,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/AllPartnersTable.vue">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_30_110249_create_items_posteds_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="70" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1042,6 +914,136 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="986" column="39" lean-forward="false" selection-start-line="986" selection-start-column="39" selection-end-line="986" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/PostItemComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="146" column="70" lean-forward="false" selection-start-line="146" selection-start-column="70" selection-end-line="146" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/Osmo/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-712">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/OpenedRequestsItemsTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="56" column="90" lean-forward="false" selection-start-line="56" selection-start-column="90" selection-end-line="56" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Open24RequestsItemsTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="56" column="90" lean-forward="false" selection-start-line="56" selection-start-column="90" selection-end-line="56" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/MyOpen24RequestsItemsTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="56" column="90" lean-forward="false" selection-start-line="56" selection-start-column="90" selection-end-line="56" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/MyDashboardComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="208" column="94" lean-forward="false" selection-start-line="208" selection-start-column="94" selection-end-line="208" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ManageUserTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="64" column="90" lean-forward="false" selection-start-line="64" selection-start-column="90" selection-end-line="64" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ManagePartnersTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="62" column="90" lean-forward="false" selection-start-line="62" selection-start-column="90" selection-end-line="62" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ManageItemsTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="61" column="90" lean-forward="false" selection-start-line="61" selection-start-column="90" selection-end-line="61" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ManageEmployeeTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="65" column="90" lean-forward="false" selection-start-line="65" selection-start-column="90" selection-end-line="65" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ManageDonorsTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="60" column="90" lean-forward="false" selection-start-line="60" selection-start-column="90" selection-end-line="60" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ContributedRequestsItemsTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="57" column="90" lean-forward="false" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/AllPartnersTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="50" column="90" lean-forward="false" selection-start-line="50" selection-start-column="90" selection-end-line="50" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/AllOffersComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/AddItemComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="91" column="90" lean-forward="false" selection-start-line="91" selection-start-column="90" selection-end-line="91" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="138" column="46" lean-forward="true" selection-start-line="138" selection-start-column="46" selection-end-line="138" selection-end-column="61" />
           <folding />
         </state>
       </provider>

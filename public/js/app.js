@@ -63201,7 +63201,10 @@ var render = function() {
                         { staticClass: "col-xs-12 form-inline float-right" },
                         [
                           _c("datatable-pager", {
-                            attrs: { type: "short", "per-page": _vm.per_page },
+                            attrs: {
+                              type: "abbreviated",
+                              "per-page": _vm.per_page
+                            },
                             model: {
                               value: _vm.page,
                               callback: function($$v) {
@@ -64701,7 +64704,10 @@ var render = function() {
                       { staticClass: "col-xs-12 form-inline float-right" },
                       [
                         _c("datatable-pager", {
-                          attrs: { type: "short", "per-page": _vm.per_page },
+                          attrs: {
+                            type: "abbreviated",
+                            "per-page": _vm.per_page
+                          },
                           model: {
                             value: _vm.page,
                             callback: function($$v) {
@@ -64979,7 +64985,10 @@ var render = function() {
                       { staticClass: "col-xs-12 form-inline float-right" },
                       [
                         _c("datatable-pager", {
-                          attrs: { type: "short", "per-page": _vm.per_page },
+                          attrs: {
+                            type: "abbreviated",
+                            "per-page": _vm.per_page
+                          },
                           model: {
                             value: _vm.page,
                             callback: function($$v) {
@@ -66950,7 +66959,10 @@ var render = function() {
                       { staticClass: "col-xs-12 form-inline float-right" },
                       [
                         _c("datatable-pager", {
-                          attrs: { type: "short", "per-page": _vm.per_page },
+                          attrs: {
+                            type: "abbreviated",
+                            "per-page": _vm.per_page
+                          },
                           model: {
                             value: _vm.page,
                             callback: function($$v) {
@@ -67248,7 +67260,10 @@ var render = function() {
                       { staticClass: "col-xs-12 form-inline float-right" },
                       [
                         _c("datatable-pager", {
-                          attrs: { type: "short", "per-page": _vm.per_page },
+                          attrs: {
+                            type: "abbreviated",
+                            "per-page": _vm.per_page
+                          },
                           model: {
                             value: _vm.page,
                             callback: function($$v) {
@@ -67525,7 +67540,10 @@ var render = function() {
                       { staticClass: "col-xs-12 form-inline float-right" },
                       [
                         _c("datatable-pager", {
-                          attrs: { type: "short", "per-page": _vm.per_page },
+                          attrs: {
+                            type: "abbreviated",
+                            "per-page": _vm.per_page
+                          },
                           model: {
                             value: _vm.page,
                             callback: function($$v) {
@@ -67827,7 +67845,10 @@ var render = function() {
                       { staticClass: "col-xs-12 form-inline float-right" },
                       [
                         _c("datatable-pager", {
-                          attrs: { type: "short", "per-page": _vm.per_page },
+                          attrs: {
+                            type: "abbreviated",
+                            "per-page": _vm.per_page
+                          },
                           model: {
                             value: _vm.page,
                             callback: function($$v) {
@@ -68352,7 +68373,7 @@ var render = function() {
                             [
                               _c("datatable-pager", {
                                 attrs: {
-                                  type: "short",
+                                  type: "abbreviated",
                                   "per-page": _vm.per_page
                                 },
                                 model: {
@@ -69060,7 +69081,10 @@ var render = function() {
                       { staticClass: "col-xs-12 form-inline float-right" },
                       [
                         _c("datatable-pager", {
-                          attrs: { type: "short", "per-page": _vm.per_page },
+                          attrs: {
+                            type: "abbreviated",
+                            "per-page": _vm.per_page
+                          },
                           model: {
                             value: _vm.page,
                             callback: function($$v) {
@@ -69335,7 +69359,10 @@ var render = function() {
                       { staticClass: "col-xs-12 form-inline float-right" },
                       [
                         _c("datatable-pager", {
-                          attrs: { type: "short", "per-page": _vm.per_page },
+                          attrs: {
+                            type: "abbreviated",
+                            "per-page": _vm.per_page
+                          },
                           model: {
                             value: _vm.page,
                             callback: function($$v) {
@@ -69623,7 +69650,10 @@ var render = function() {
                       { staticClass: "col-xs-12 form-inline float-right" },
                       [
                         _c("datatable-pager", {
-                          attrs: { type: "short", "per-page": _vm.per_page },
+                          attrs: {
+                            type: "abbreviated",
+                            "per-page": _vm.per_page
+                          },
                           model: {
                             value: _vm.page,
                             callback: function($$v) {

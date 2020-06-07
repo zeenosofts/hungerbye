@@ -58,7 +58,7 @@
 
                                 <div class="row">
                                     <div class="col-xs-12 form-inline float-right">
-                                        <datatable-pager  v-model="page" type="short" :per-page="per_page"></datatable-pager>
+                                        <datatable-pager  v-model="page" type="abbreviated" :per-page="per_page"></datatable-pager>
                                     </div>
                                 </div>
                             </div>
