@@ -70721,6 +70721,17 @@ var render = function() {
                           _c("b", [_vm._v("Manage Products")]),
                           _vm._v(".")
                         ]
+                      ),
+                      _c(
+                        "span",
+                        { attrs: { slot: "noOptions" }, slot: "noOptions" },
+                        [
+                          _vm._v(
+                            "No item found.Please add an item first by going to "
+                          ),
+                          _c("b", [_vm._v("Manage Products")]),
+                          _vm._v(".")
+                        ]
                       )
                     ]
                   ),
