@@ -974,13 +974,16 @@ class UserController extends Controller
         }
     }
     public function getAllPartnersWithRequest(){
-        $allUsers=User::select(DB::raw('*,users.id as user_id,roles.name as role_name,count(items_posteds.user_id) as served'))->join('role_user','users.id','=','role_user.user_id')
+        $allUsers=User::select(DB::raw('*,users.id as user_id,roles.name as role_name'))
+            ->join('role_user','users.id','=','role_user.user_id')
             ->join('roles','roles.id','=','role_user.role_id')
-            ->join('items_posteds','items_posteds.user_id','=','users.id')
             ->where('roles.id','=',4)
-            ->groupBy('items_posteds.user_id')
             ->get();
-        return json_encode($allUsers);
+        foreach($allUsers as $u){
+            $getPostedRequests=ItemsPosted::select(DB::raw('count(items_posteds.user_id) as served'))->where('user_id','=',$u->user_id)->groupBy('user_id')->first()->served;
+                $data[]=array('business_name' => $u->business_name,'business_address' => $u->business_address,'user_id' => $u->user_id,'served' => $getPostedRequests);
+        }
+        return json_encode($data);
     }
     public function getPartnerWithServedRequests(Request $request){
         $allUsers=User::select(DB::raw('*,users.id as user_id,roles.name as role_name,count(items_posteds.user_id) as served'))->join('role_user','users.id','=','role_user.user_id')
