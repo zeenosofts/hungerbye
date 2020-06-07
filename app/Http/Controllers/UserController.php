@@ -980,7 +980,12 @@ class UserController extends Controller
             ->where('roles.id','=',4)
             ->get();
         foreach($allUsers as $u){
-            $getPostedRequests=ItemsPosted::select(DB::raw('count(items_posteds.user_id) as served'))->where('user_id','=',$u->user_id)->groupBy('user_id')->first()->served;
+            $check=ItemsPosted::where('user_id','=',$u->user_id)->get();
+            if(count($check) > 0) {
+                $getPostedRequests = ItemsPosted::select(DB::raw('count(items_posteds.user_id) as served'))->where('user_id', '=', $u->user_id)->groupBy('user_id')->first()->served;
+            }else{
+                $getPostedRequests = 0;
+            }
                 $data[]=array('business_name' => $u->business_name,'business_address' => $u->business_address,'user_id' => $u->user_id,'served' => $getPostedRequests);
         }
         return json_encode($data);

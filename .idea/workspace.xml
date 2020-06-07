@@ -34,8 +34,8 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="975" column="48" lean-forward="false" selection-start-line="975" selection-start-column="48" selection-end-line="975" selection-end-column="48" />
+            <state relative-caret-position="493">
+              <caret line="986" column="39" lean-forward="false" selection-start-line="986" selection-start-column="39" selection-end-line="986" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -495,7 +495,7 @@
       <workItem from="1590473249899" duration="188000" />
       <workItem from="1590727443975" duration="11266000" />
       <workItem from="1590991592721" duration="5717000" />
-      <workItem from="1591548043720" duration="2193000" />
+      <workItem from="1591548043720" duration="2357000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583738279704</created>
@@ -543,7 +543,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1105823000" />
+    <option name="totallyTimeSpent" value="1105987000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1040,8 +1040,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="975" column="48" lean-forward="false" selection-start-line="975" selection-start-column="48" selection-end-line="975" selection-end-column="48" />
+        <state relative-caret-position="493">
+          <caret line="986" column="39" lean-forward="false" selection-start-line="986" selection-start-column="39" selection-end-line="986" selection-end-column="39" />
           <folding />
         </state>
       </provider>
