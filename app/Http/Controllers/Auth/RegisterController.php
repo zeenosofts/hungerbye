@@ -85,7 +85,7 @@ class RegisterController extends Controller
             $color = "text-yellow";
             $title = "New Partner Request";
             $body = " Please review and approve Partner";
-            $type = json_encode(array("fas fa-user-plus $color", $g->user_id,'/admin/manage-user'));
+            $type = json_encode(array("fas fa-user-plus $color", $g->user_id,'/admin/manage-partners'));
             $icon = "/abc";
             $token = Token::select(DB::raw('*'))->join('role_user', 'tokens.user_id', '=', 'role_user.user_id')
                 ->join('roles', 'roles.id', '=', 'role_user.role_id')

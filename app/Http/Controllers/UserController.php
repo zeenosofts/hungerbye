@@ -628,7 +628,7 @@ class UserController extends Controller
 //        }
     }
     public function saveNotification($user,$title,$body,$type,$icon){
-        if($user == "donor"){
+        if($user == "donors"){
          $all=User::select(DB::raw('*,users.id as uid'))->join('role_user','users.id','=','role_user.user_id')
              ->join('roles','roles.id','=','role_user.role_id')
              ->where('roles.name','=','donor')->get();
