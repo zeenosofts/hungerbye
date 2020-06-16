@@ -506,7 +506,8 @@ class PaymentController extends Controller
         if($typeAmount == "full") {
             return $amount - $getAmount - 0.30;
         }else{
-            return $amount - $getAmount - 0.30 - ($amount/10);
+            //return $amount - $getAmount - 0.30 - ($amount/10);
+            return $amount - $getAmount - 0.30;
         }
     }
     public function getAmountForPartnerGET($amount){
