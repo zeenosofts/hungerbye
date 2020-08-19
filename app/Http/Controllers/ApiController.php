@@ -14,17 +14,17 @@ class ApiController extends Controller
         if(count($checkUser) > 0){
             $checkUserIfGoogle=User::where('email','=',$request->email)->where('google_id','!=',null)->get();
             if(count($checkUserIfGoogle) > 0){
-                return json_encode(array('status' => 401, 'found' => 'google'));
+                return json_encode(array( 'found' => 'google'));
             }else{
                 $checkEmailAndPassword = User::where('email','=',$request->email)->where('password','=',md5($request->password))->get();
                 if(count($checkEmailAndPassword) > 0){
-                    return json_encode(array('status' => 401, 'found' => 'yes'));
+                    return json_encode(array( 'found' => 'yes'));
                 }else{
-                    return json_encode(array('status' => 404, 'found' => 'no'));
+                    return json_encode(array( 'found' => 'no'));
                 }
             }
         }else{
-            return json_encode(array('status' => 404, 'found' => 'no'));
+            return json_encode(array( 'found' => 'no'));
         }
     }
 }
