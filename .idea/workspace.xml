@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d769162a-5a45-428b-9e21-f1f8e170a7fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/routes/api.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
       <change type="MODIFICATION" beforePath="D:/hungerbey/hungerbey/app/Http/Controllers/UserController.php" afterPath="D:/hungerbey/hungerbey/app/Http/Controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="D:/hungerbey/hungerbey/firebase-messaging-sw.js" afterPath="D:/hungerbey/hungerbey/firebase-messaging-sw.js" />
       <change type="MODIFICATION" beforePath="D:/hungerbey/hungerbey/resources/views/layouts/masterLayout.blade.php" afterPath="D:/hungerbey/hungerbey/resources/views/layouts/masterLayout.blade.php" />
@@ -53,11 +53,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
               <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VerifyCsrfToken.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -128,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/AwesomeProject/App.js" />
         <option value="$PROJECT_DIR$/resources/js/components/EditUserComponent.vue" />
         <option value="$PROJECT_DIR$/resources/views/auth/complete_profile.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
@@ -179,6 +188,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
       </list>
     </option>
   </component>
@@ -478,7 +488,7 @@
       <workItem from="1592249249554" duration="901000" />
       <workItem from="1592255796026" duration="207000" />
       <workItem from="1592293470315" duration="62000" />
-      <workItem from="1597833265331" duration="1580000" />
+      <workItem from="1597833265331" duration="1874000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583738279704</created>
@@ -526,7 +536,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1113899000" />
+    <option name="totallyTimeSpent" value="1114193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -657,13 +667,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/AddCardComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2594">
@@ -1017,6 +1020,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding />
         </state>
       </provider>
