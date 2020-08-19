@@ -17,6 +17,6 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 Route::group([ 'middleware' => ['api']], function() {
-    Route::POST('getRoles', 'UserController@getRoles')->name('getRoles');//
+    Route::POST('login', 'ApiController@login')->name('login');//
 });
 //
