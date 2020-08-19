@@ -19,4 +19,7 @@ use Illuminate\Http\Request;
 Route::group([ 'middleware' => ['api']], function() {
     Route::POST('login', 'ApiController@login')->name('login');//
 });
+Route::GET('/', function(){
+  echo "sasafsafsafsa";
+});//
 //
