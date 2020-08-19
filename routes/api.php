@@ -16,9 +16,9 @@ use Illuminate\Http\Request;
 //Route::middleware('auth:api')->post('getRoles', function (Request $request) {
 //    return $request->user();
 //});
-Route::group([ 'middleware' => ['api']], function() {
+//Route::group([ 'middleware' => ['api']], function() {
     Route::POST('api_login', 'ApiController@login')->name('api_login');//
-});
+//});
 Route::GET('/', function(){
   echo "sasafsafsafsa";
 });//
