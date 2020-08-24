@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Role;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -18,7 +19,10 @@ class ApiController extends Controller
             }else{
                 $checkEmailAndPassword = User::where('email','=',$request->email)->where('password','=',md5($request->password))->get();
                 if(count($checkEmailAndPassword) > 0){
-                    return json_encode(array( 'found' => 'yes'));
+                    $user = User::where('email','=',$request->email)->where('password','=',md5($request->password))->first()->except('password');
+                    $getRoleDetails = Role::join('role_user','roles.id','=','role_user.role_id')->where('role_user.user_id','=',$user->id)->first();
+                    $updateToken = User::where('id','=',$user->id)->update('remember_token','=',md5(time()));
+                    return json_encode(array( 'found' => 'yes','user' => $user , 'role' => $getRoleDetails->name , 'token' => User::where('id','=',$user->id)->first()->remember_token));
                 }else{
                     return json_encode(array( 'found' => 'no'));
                 }
