@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d769162a-5a45-428b-9e21-f1f8e170a7fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/routes/api.php" />
       <change type="MODIFICATION" beforePath="D:/hungerbey/hungerbey/app/Http/Controllers/UserController.php" afterPath="D:/hungerbey/hungerbey/app/Http/Controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="D:/hungerbey/hungerbey/firebase-messaging-sw.js" afterPath="D:/hungerbey/hungerbey/firebase-messaging-sw.js" />
       <change type="MODIFICATION" beforePath="D:/hungerbey/hungerbey/resources/views/layouts/masterLayout.blade.php" afterPath="D:/hungerbey/hungerbey/resources/views/layouts/masterLayout.blade.php" />
@@ -53,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApiController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ApiController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="33" />
+            <state relative-caret-position="360">
+              <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
               <folding>
                 <element signature="e#40#53#0#PHP" expanded="true" />
               </folding>
@@ -65,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
@@ -179,8 +177,8 @@
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/APIAuthenticate.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" />
       </list>
     </option>
   </component>
@@ -472,7 +470,7 @@
       <workItem from="1598082724397" duration="2021000" />
       <workItem from="1598253501939" duration="1779000" />
       <workItem from="1598272661884" duration="15000" />
-      <workItem from="1598866474734" duration="689000" />
+      <workItem from="1598866474734" duration="1718000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583738279704</created>
@@ -520,7 +518,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1121034000" />
+    <option name="totallyTimeSpent" value="1122063000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -992,21 +990,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="33" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

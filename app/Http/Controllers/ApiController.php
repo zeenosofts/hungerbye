@@ -44,7 +44,7 @@ class ApiController extends Controller
                 'status' => 1
             ]);
             $user->attachRole(3);
-            $this->getUserDetails($request->email,$request->password);
+            return $this->getUserDetails($request->email,$request->password);
         }
     }
     public function getUserDetails($email,$password){
