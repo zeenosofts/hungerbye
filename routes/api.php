@@ -21,6 +21,7 @@ header('Access-Control-Allow-Methods:  POST, GET, OPTIONS, PUT, DELETE');
 header('Access-Control-Allow-Headers:  Content-Type, X-Auth-Token, Origin, Authorization');
 Route::group([ 'middleware' => ['api']], function() {
     Route::POST('api_login', 'ApiController@login')->name('api_login');//
+    Route::POST('api_register', 'ApiController@registerDonor')->name('api_register');//
 });
 Route::GET('/', function(){
   echo "sasafsafsafsa";

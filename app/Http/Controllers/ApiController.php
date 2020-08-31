@@ -31,4 +31,26 @@ class ApiController extends Controller
             return json_encode(array( 'found' => 'no'));
         }
     }
+    public function registerDonor(Request $request){
+        $checkUser=User::where('email','=',$request->email)->get();
+        if(count($checkUser) > 0){
+            return json_encode(array( 'found' => 'already'));
+        }else{
+            $user= User::create([
+                'first_name' => $request->first_name,
+                'last_name' => $request->last_name,
+                'email' => $request->email,
+                'password' => md5($request->password),
+                'status' => 1
+            ]);
+            $user->attachRole(3);
+            $this->getUserDetails($request->email,$request->password);
+        }
+    }
+    public function getUserDetails($email,$password){
+        $user = User::where('email','=',$email)->where('password','=',md5($password))->first();
+        $getRoleDetails = Role::join('role_user','roles.id','=','role_user.role_id')->where('role_user.user_id','=',$user->id)->first();
+        $updateToken = User::where('id','=',$user->id)->update(['remember_token' => md5(time())]);
+        return json_encode(array( 'found' => 'yes','user' => $user , 'role' => $getRoleDetails->name , 'token' => User::where('id','=',$user->id)->first()->remember_token));
+    }
 }
