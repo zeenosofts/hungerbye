@@ -53,4 +53,12 @@ class ApiController extends Controller
         $updateToken = User::where('id','=',$user->id)->update(['remember_token' => md5(time())]);
         return json_encode(array( 'found' => 'yes','user' => $user , 'role' => $getRoleDetails->name , 'token' => User::where('id','=',$user->id)->first()->remember_token));
     }
+    public function findToken(Request $request){
+        $user = User::where('remember_token','=',$request->remember_token)->get();
+        if(count($user) > 0){
+            return json_encode(array( 'found' => 'yes'));
+        }else{
+            return json_encode(array( 'found' => 'no'));
+        }
+    }
 }

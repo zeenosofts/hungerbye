@@ -22,6 +22,7 @@ header('Access-Control-Allow-Headers:  Content-Type, X-Auth-Token, Origin, Autho
 Route::group([ 'middleware' => ['api']], function() {
     Route::POST('api_login', 'ApiController@login')->name('api_login');//
     Route::POST('api_register', 'ApiController@registerDonor')->name('api_register');//
+    Route::POST('api_find_token', 'ApiController@findToken')->name('api_find_token');//
 });
 Route::GET('/', function(){
   echo "sasafsafsafsa";
