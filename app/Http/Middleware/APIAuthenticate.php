@@ -15,10 +15,10 @@ class APIAuthenticate
      */
     public function handle($request, Closure $next)
     {
-        $apiKey=$request->header("API_KEY");
-        if($apiKey != "ABC"){
-            return response()->json(["message" => "Invalid API Key"],401);
-        }
+//        $apiKey=$request->header("API_KEY");
+//        if($apiKey != "ABC"){
+//            return response()->json(["message" => "Invalid API Key"],401);
+//        }
         return $next($request);
     }
 
